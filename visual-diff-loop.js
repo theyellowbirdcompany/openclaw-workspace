@@ -12,14 +12,50 @@ const { chromium } = require('playwright');
 const pixelmatch = require('pixelmatch');
 const { PNG } = require('pngjs');
 
+// Parse CLI arguments
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const config = {
+    url: 'http://localhost:5173/command-center',
+    width: 1440,
+    height: 900,
+    selector: '#root',
+    threshold: 0.005,
+    maxRetries: 3,
+    outputDir: './visual-diff-loop.archive',
+    baselineDir: null
+  };
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--url' && args[i + 1]) {
+      config.url = args[i + 1];
+      i++;
+    } else if (args[i] === '--width' && args[i + 1]) {
+      config.width = parseInt(args[i + 1]);
+      i++;
+    } else if (args[i] === '--height' && args[i + 1]) {
+      config.height = parseInt(args[i + 1]);
+      i++;
+    } else if (args[i] === '--selector' && args[i + 1]) {
+      config.selector = args[i + 1];
+      i++;
+    } else if (args[i] === '--threshold' && args[i + 1]) {
+      config.threshold = parseFloat(args[i + 1]) / 100;
+      i++;
+    } else if (args[i] === '--output' && args[i + 1]) {
+      config.outputDir = args[i + 1];
+      i++;
+    } else if (args[i] === '--baseline' && args[i + 1]) {
+      config.baselineDir = args[i + 1];
+      i++;
+    }
+  }
+
+  return config;
+}
+
 // Configuration
-const CONFIG = {
-  appUrl: 'http://localhost:5173/command-center',
-  screenshotSelector: '#root',
-  pixelmatchThreshold: 0.005, // 0.5%
-  maxRetries: 3,
-  outputDir: './visual-diff-loop.archive'
-};
+const CONFIG = parseArgs();
 
 // State
 let iteration = 0;
@@ -29,8 +65,9 @@ const iterations = [];
 
 async function init() {
   console.log('🎬 Visual Diff Loop initialized');
-  console.log(`   App URL: ${CONFIG.appUrl}`);
-  console.log(`   Threshold: ${(CONFIG.pixelmatchThreshold * 100).toFixed(2)}%`);
+  console.log(`   App URL: ${CONFIG.url}`);
+  console.log(`   Viewport: ${CONFIG.width}x${CONFIG.height}`);
+  console.log(`   Threshold: ${(CONFIG.threshold * 100).toFixed(2)}%`);
   console.log(`   Max retries: ${CONFIG.maxRetries}\n`);
 
   if (!fs.existsSync(CONFIG.outputDir)) {
@@ -39,14 +76,14 @@ async function init() {
 
   browser = await chromium.launch();
   page = await browser.newPage();
-  page.setViewportSize({ width: 1920, height: 1080 });
+  page.setViewportSize({ width: CONFIG.width, height: CONFIG.height });
 }
 
 async function captureCurrentState() {
   console.log(`[Iteration ${iteration}] 📸 Capturing current state...`);
   
-  await page.goto(CONFIG.appUrl, { waitUntil: 'networkidle' });
-  await page.waitForSelector(CONFIG.screenshotSelector, { timeout: 5000 });
+  await page.goto(CONFIG.url, { waitUntil: 'networkidle' });
+  await page.waitForSelector(CONFIG.selector, { timeout: 5000 });
   
   // Wait for animations to settle
   await page.waitForTimeout(1000);
@@ -62,12 +99,18 @@ async function createMockFigmaReference() {
   // For testing without actual Figma file, create a reference by taking second screenshot
   console.log(`[Iteration ${iteration}] 📋 Creating reference (mock Figma export)...`);
   
+  // Check if baseline exists
+  if (CONFIG.baselineDir && fs.existsSync(CONFIG.baselineDir)) {
+    console.log(`   ✅ Using baseline: ${CONFIG.baselineDir}`);
+    return CONFIG.baselineDir;
+  }
+  
   const referencePath = path.join(CONFIG.outputDir, 'figma-reference.png');
   
   // In real usage, this would fetch from Figma MCP
   // For now, we use the current screenshot as reference (first iteration)
   if (iteration === 0) {
-    await page.goto(CONFIG.appUrl, { waitUntil: 'networkidle' });
+    await page.goto(CONFIG.url, { waitUntil: 'networkidle' });
     await page.screenshot({ path: referencePath, fullPage: false });
     console.log(`   ✅ Reference established: ${referencePath}`);
   }
