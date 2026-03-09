@@ -1,0 +1,326 @@
+{
+  "h1": {
+    "cascade": {
+      "selector": "h1",
+      "conflicts": [],
+      "hasConflicts": false
+    },
+    "shift": {
+      "selector": "h1",
+      "shift": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hasShift": false,
+      "cls": 0
+    },
+    "font": {
+      "selector": "h1",
+      "font": {
+        "family": "\"Space Mono\", monospace",
+        "size": "24px",
+        "weight": "700",
+        "lineHeight": "32px",
+        "letterSpacing": "0.48px"
+      },
+      "metrics": {
+        "width": "313.00",
+        "height": "32.00",
+        "lineCount": 1
+      },
+      "issues": {
+        "missingFontFamily": false,
+        "unusualLineHeight": false,
+        "tightLetterSpacing": false
+      }
+    },
+    "zindex": {
+      "selector": "h1",
+      "stacking": {
+        "zIndex": "auto",
+        "position": "static",
+        "hasStackingContext": false,
+        "opacity": "1",
+        "transform": "none"
+      },
+      "overlapping": [],
+      "issues": {
+        "zIndexWar": false,
+        "noStackingContext": false
+      }
+    },
+    "layout": {
+      "selector": "h1",
+      "display": {
+        "computed": "block",
+        "position": "static",
+        "floated": false,
+        "flex": false,
+        "grid": false
+      },
+      "dimensions": {
+        "width": "313.00",
+        "height": "32.00",
+        "visible": true
+      },
+      "overflow": {
+        "x": "visible",
+        "y": "visible",
+        "scrollable": true
+      },
+      "issues": {
+        "invisible": false,
+        "hiddenOverflow": false,
+        "scrollable": true
+      }
+    }
+  },
+  "h2": {
+    "cascade": {
+      "selector": "h2",
+      "conflicts": [],
+      "hasConflicts": false
+    },
+    "shift": {
+      "selector": "h2",
+      "shift": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hasShift": false,
+      "cls": 0
+    },
+    "font": {
+      "selector": "h2",
+      "font": {
+        "family": "\"IBM Plex Sans\", system-ui, sans-serif",
+        "size": "14px",
+        "weight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "1.4px"
+      },
+      "metrics": {
+        "width": "992.00",
+        "height": "20.00",
+        "lineCount": 1
+      },
+      "issues": {
+        "missingFontFamily": false,
+        "unusualLineHeight": false,
+        "tightLetterSpacing": false
+      }
+    },
+    "zindex": {
+      "selector": "h2",
+      "stacking": {
+        "zIndex": "auto",
+        "position": "static",
+        "hasStackingContext": false,
+        "opacity": "1",
+        "transform": "none"
+      },
+      "overlapping": [],
+      "issues": {
+        "zIndexWar": false,
+        "noStackingContext": false
+      }
+    },
+    "layout": {
+      "selector": "h2",
+      "display": {
+        "computed": "block",
+        "position": "static",
+        "floated": false,
+        "flex": false,
+        "grid": false
+      },
+      "dimensions": {
+        "width": "992.00",
+        "height": "20.00",
+        "visible": true
+      },
+      "overflow": {
+        "x": "visible",
+        "y": "visible",
+        "scrollable": false
+      },
+      "issues": {
+        "invisible": false,
+        "hiddenOverflow": false,
+        "scrollable": false
+      }
+    }
+  },
+  "p": {
+    "cascade": {
+      "selector": "p",
+      "conflicts": [],
+      "hasConflicts": false
+    },
+    "shift": {
+      "selector": "p",
+      "shift": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hasShift": false,
+      "cls": 0
+    },
+    "font": {
+      "selector": "p",
+      "font": {
+        "family": "\"IBM Plex Sans\", system-ui, sans-serif",
+        "size": "12px",
+        "weight": "500",
+        "lineHeight": "16px",
+        "letterSpacing": "normal"
+      },
+      "metrics": {
+        "width": "146.00",
+        "height": "16.00",
+        "lineCount": 1
+      },
+      "issues": {
+        "missingFontFamily": false,
+        "unusualLineHeight": false,
+        "tightLetterSpacing": false
+      }
+    },
+    "zindex": {
+      "selector": "p",
+      "stacking": {
+        "zIndex": "auto",
+        "position": "static",
+        "hasStackingContext": false,
+        "opacity": "1",
+        "transform": "none"
+      },
+      "overlapping": [
+        {
+          "tag": "P",
+          "zIndex": "auto",
+          "position": "static"
+        }
+      ],
+      "issues": {
+        "zIndexWar": false,
+        "noStackingContext": true
+      }
+    },
+    "layout": {
+      "selector": "p",
+      "display": {
+        "computed": "block",
+        "position": "static",
+        "floated": false,
+        "flex": false,
+        "grid": false
+      },
+      "dimensions": {
+        "width": "146.00",
+        "height": "16.00",
+        "visible": true
+      },
+      "overflow": {
+        "x": "visible",
+        "y": "visible",
+        "scrollable": false
+      },
+      "issues": {
+        "invisible": false,
+        "hiddenOverflow": false,
+        "scrollable": false
+      }
+    }
+  },
+  "button": {
+    "cascade": {
+      "selector": "button",
+      "conflicts": [],
+      "hasConflicts": false
+    },
+    "shift": {
+      "selector": "button",
+      "shift": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "hasShift": false,
+      "cls": null
+    },
+    "font": {
+      "selector": "button",
+      "font": {
+        "family": "\"IBM Plex Sans\", system-ui, sans-serif",
+        "size": "22px",
+        "weight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal"
+      },
+      "metrics": {
+        "width": "0.00",
+        "height": "0.00",
+        "lineCount": 0
+      },
+      "issues": {
+        "missingFontFamily": false,
+        "unusualLineHeight": true,
+        "tightLetterSpacing": false
+      }
+    },
+    "zindex": {
+      "selector": "button",
+      "stacking": {
+        "zIndex": "auto",
+        "position": "static",
+        "hasStackingContext": false,
+        "opacity": "1",
+        "transform": "none"
+      },
+      "overlapping": [
+        {
+          "tag": "DIV",
+          "zIndex": "auto",
+          "position": "static"
+        }
+      ],
+      "issues": {
+        "zIndexWar": false,
+        "noStackingContext": true
+      }
+    },
+    "layout": {
+      "selector": "button",
+      "display": {
+        "computed": "inline-block",
+        "position": "static",
+        "floated": false,
+        "flex": false,
+        "grid": false
+      },
+      "dimensions": {
+        "width": "0.00",
+        "height": "0.00",
+        "visible": false
+      },
+      "overflow": {
+        "x": "visible",
+        "y": "visible",
+        "scrollable": false
+      },
+      "issues": {
+        "invisible": true,
+        "hiddenOverflow": false,
+        "scrollable": false
+      }
+    }
+  }
+}
