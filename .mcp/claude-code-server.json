@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "claude-code": {
+      "command": "/home/clawd/.local/bin/claude",
+      "args": ["-p", "{prompt}"],
+      "env": {},
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}

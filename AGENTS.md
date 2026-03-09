@@ -230,6 +230,31 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+## ⚠️ LOGGING HARD GATE (Phase 6 — 2026-03-07)
+
+Logging is the contract. Non-negotiable. Applies to ALL 7 agents.
+
+### Every agent MUST write to Supabase BEFORE sending their final reply:
+
+1. **agent_logs** — every task, including failures
+2. **agent_costs** — every session: model, tokens, cost
+3. **agent_status** — upsert on every run: agent_name, last_seen, current_task, status
+
+### Additional triggers:
+- **heartbeat_logs** — on every heartbeat
+- **north_star_history** — when north star changes
+- **todos** — pick up on start, update status, close on completion
+
+### Rules:
+- `north_star_id` required on every entry when a north star is active
+- Failed tasks must be logged with `status: failed` — no exemptions
+- Claw rejects any output that arrives without prior logging
+- No partial compliance. No exceptions.
+
+Credentials: see `LOGGING.md`
+
+---
+
 ## ⚠️ MANDATORY: Lifecycle Gate Enforcement
 
 Before accepting any final response from a worker agent, validate the LIFECYCLE_CONFIRMATION block.
@@ -269,3 +294,11 @@ If any field is missing, false, or malformed:
 3. Do not pass the output to Brett
 
 Claw does NOT write to agent_runs, agent_logs, artifacts, run_reviews, tool_calls, or todos.
+
+### Supabase Backend
+Worker agents log to Supabase. Connection details are stored in `LOGGING.md`.
+Tables: agent_runs, agent_logs, artifacts
+Restricted: tool_calls, todos, run_reviews (orchestration layer only)
+
+Worker agents are: Bernard, Christopher, Devan, Vale, Scribe, Atlas.
+Claw is exempt from worker logging rules.

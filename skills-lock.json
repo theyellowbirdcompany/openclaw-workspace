@@ -1,0 +1,1245 @@
+{
+  "version": 1,
+  "skills": {
+    "Agent Development": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "4931c2867890bfef5881225adb691c3d719fe9ad556e3d5fae15f83e0668fa60"
+    },
+    "Command Development": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "bca581f0a2789f75d9501499b9f4dc354eb40b213ccd23d13f5b87299db1f84a"
+    },
+    "Hook Development": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "a1721df65785b6c0439d4326cdee0cb2b6aa98de09fc98463afc3e040fe00ce9"
+    },
+    "MCP Integration": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "99cfef49810cb80a39762a79dbb6a80d486ea56cfa1a81ed10cae0a5a296b496"
+    },
+    "Plugin Settings": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "b4be0bf62782da83e962aa759e7d5efb1d5934b81554f1d15801fdf5e01b18a4"
+    },
+    "Plugin Structure": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "c4e9b3ea36efad4ab599465aaac71f81dc3320a183920678fe1587181c446b07"
+    },
+    "Skill Development": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "8d262f08f33825947ea20204ebf5101e36056c98090251bd973a552ec8ef0c0c"
+    },
+    "Writing Hookify Rules": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "429463a57a711ee42d1373a726e66ccc2189118022f0c281dbb48b28796d417f"
+    },
+    "academic-researcher": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "16dd0121beefcbb1dba0652f0a37fd5511380c8be7ae69270222913483b00bbc"
+    },
+    "agent-framework-azure-ai-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1ca6d614db87a15a0ef630f2439a60663c4ac9d7507f206a3b437911c14a23b2"
+    },
+    "agents-v2-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "fd859d86d9886186c7d97ddf0e8a8a9d7ee0f2dbdf251003d860a445154cdecb"
+    },
+    "algorithmic-art": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "5c2804e8f0d4944c7ce6939a2e4afdcf0cb69c966a505481ed8b96e20bb32eee"
+    },
+    "appinsights-instrumentation": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "6d1d870785cb0af820295fb75e1448a112a82e69e950d04d8edc609725f3e678"
+    },
+    "aspnet-core": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "8c10311b9afeeeaf0d8db4372322d020fc7e05ccd09f85f806ec8756de9ecc09"
+    },
+    "azure-ai": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "74d9734b4901f79fb5a2dd401f52834be64281c534b2f68b7a6d4676165353d3"
+    },
+    "azure-ai-agents-persistent-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "35ad230582849b14126357e948d027ce9ec7ddc45ce158e592f2c8d3f532d06a"
+    },
+    "azure-ai-agents-persistent-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "799a90fc6fe0873abfc3cfe1f823bab663f7b8b16ba409e2740880ac685728ee"
+    },
+    "azure-ai-anomalydetector-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "441e1fa2c71cb28b6b711a942e146361af0116922883b6e966e91f6301d45555"
+    },
+    "azure-ai-contentsafety-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5a7923e668404cab96915ba2c1daa88d331ff4185432664c77a597adc2a38583"
+    },
+    "azure-ai-contentsafety-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "37e8c50a99a682bea320e083633f6d42e18d2f950e4450e07121804d27178819"
+    },
+    "azure-ai-contentsafety-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "bbddce54e7ba59ebec89a4ecebd041335c8501016f6a4848ba43358da29b1cbc"
+    },
+    "azure-ai-contentunderstanding-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "661bb6820ade0fa3d04461b753db162018f6672cd02dd0036018010da075984c"
+    },
+    "azure-ai-document-intelligence-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "7d37a96743f69a14e6d24e0dbe70cde3f04dd61e304cec88159e8edd857b61c1"
+    },
+    "azure-ai-document-intelligence-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "9ec271d40a5c914892b3cce8ce36dc75295ea2c3864e8b0148525a6d8f4f6546"
+    },
+    "azure-ai-formrecognizer-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e6cc811b1283ad53be717a685cf0c5555d830b1c72ff9ff5a5a5e5897b704d1a"
+    },
+    "azure-ai-language-conversations-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "27c61b8dedd43be64d07fa73b54666ebaf584902364dd2cc7f4636c8c38d4320"
+    },
+    "azure-ai-ml-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c35cc61a3aa6cc7eb34d1ab52505452b9602f0f28dce2a61d593e84e781122b5"
+    },
+    "azure-ai-openai-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "2dd81c1d3ec85c8f4ea785ad557538aeae1717fb80fa2b1d1429170c9647d83b"
+    },
+    "azure-ai-projects-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8de22a2d88c095e67db391097a30d7d9c4114983538450a69f61fd5c2b2a774c"
+    },
+    "azure-ai-projects-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ccc8ce51e09e7998ccaeb252704739ca8d4ac1efb0c1419ad00d6e8fd4d1b7c4"
+    },
+    "azure-ai-projects-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e13f2c132d0542de38dc02b610f658aa00ea0549598656625431dbda156a4507"
+    },
+    "azure-ai-projects-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "39c182c1e597cee1aa33f8eb9511be570bfdc3a81c11742aa4a0606dee9c71dd"
+    },
+    "azure-ai-textanalytics-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "7801ce717a53c146bd22a19b81d52af7acf0f2ba67acc4f9457c2cf24305fc73"
+    },
+    "azure-ai-transcription-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "843a3593450e22c79b787ec52b41437a5d00d464df1fefce58b2c8e17b53c3ba"
+    },
+    "azure-ai-translation-document-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "01dbe995de76be3c653f3e1e737b6b5e9f26d4181720df0d88c833801e9d9878"
+    },
+    "azure-ai-translation-text-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c05aacd0eaee54ada34f6842fb3c8b403426d6a085ede2334094ab36ed766226"
+    },
+    "azure-ai-translation-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "214e04379ea4edc2983d5e966c50b22bdae3b90554574b3ad346b9237cf5f485"
+    },
+    "azure-ai-vision-imageanalysis-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0d9c3403f02320bbed0a6bda3f0e8e2c15f60e6b311aaa3882567366e7eff815"
+    },
+    "azure-ai-vision-imageanalysis-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5cdce1903dff7c7e63e4d048882b2ccdef01973cb211b7b19d920c3497720285"
+    },
+    "azure-ai-voicelive-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f66dea6db57707eb657566fed603351a84c7ef6fdd9d85c8370fdca493cda113"
+    },
+    "azure-ai-voicelive-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d7431915d42a83581b646b2179f6c9c5ee5345c7ec4620598b7ce0ad398a9824"
+    },
+    "azure-ai-voicelive-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f2c5cb3c5e1635debe801e8fd72e0119efd9ea4389c8b0610a585fa587dc928c"
+    },
+    "azure-ai-voicelive-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "167418cf9c0fad68547a31de1565156ac1c26fd8d919e59cdc7d69e0efd6f398"
+    },
+    "azure-aigateway": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "916663317b83fe66b038b514da5dcfaad3b899ec4ef14aec525680ca98faa231"
+    },
+    "azure-appconfiguration-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "26860becde38a06684b4d759ebc12769950a5601b457c77f15841c30716cc665"
+    },
+    "azure-appconfiguration-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "bba888532562a1e1f0c93d393aee1398bc909d8f1abe57070a15a38cbfe90871"
+    },
+    "azure-appconfiguration-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e06d517e895548a8c2e89af5f433a2a52c7cd46e4b84a35bd74ce1c65873972c"
+    },
+    "azure-communication-callautomation-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1792b3f639d9e7a186c9d9fa2488649d4721c83e7743bccbdb79c32b26eb3b77"
+    },
+    "azure-communication-callingserver-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "a247935cee07da5cdd7ab783fe01f8c71bca42383b602d71bd4b5c2919c8be00"
+    },
+    "azure-communication-chat-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "18967e1c30c159b962ac92349bb94a5a1647463c6216a5e0dc46747c9e36ce1c"
+    },
+    "azure-communication-common-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1e57bf4cbbebd3c7ba1adb8614b11f3af563fd453fbe0a83b9b234b5871c302a"
+    },
+    "azure-communication-sms-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "189cdcf0f82f8df52fc2c6f50eb712501e830c59e30935e212bdf07dbfcebe13"
+    },
+    "azure-compliance": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8ca69c452992939d1c857aa8feb7cc0bdfefcb28e972cdebc76a0794517e5e99"
+    },
+    "azure-compute-batch-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "2c80eca637be224525f661bc3e1e6b537c9c143f04cc7f993cad4ca38a0061b5"
+    },
+    "azure-containerregistry-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "bb3f141196c60299ad12bbaa5c388711149394763b600f6c44710d6599844bf5"
+    },
+    "azure-cosmos-db-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "64043ac2c22faddecf9b7b1c6ec741908c4dae69596efbc430989c6c587f7513"
+    },
+    "azure-cosmos-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "39c616486cdcc8be937bfb8a647ee79cb54dada835cdb3ff933d1b7e5a7c29c7"
+    },
+    "azure-cosmos-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ae86514931b9825c0c9613568da54be91088523d6561bb3844f6fe42587b0d0b"
+    },
+    "azure-cosmos-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3ebb597bc5791076bc8f0f9316118ea79e5a7acfe6cf33e545b27ad061c17bad"
+    },
+    "azure-cosmos-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "48028c4818e7681b705a14895737719a74fd9d690279a9d4b05f60e27cce0f16"
+    },
+    "azure-cost-optimization": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e7c6a75efd7e80f554db6c649b813a17bd3e833e8070816b0121d218a0e0795e"
+    },
+    "azure-data-tables-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "552e12fda3f2dc0cc1e4bdcc551d73d9f770cbbd959a1d89dd911a6c2b3bae01"
+    },
+    "azure-data-tables-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "64956b216a05fa2dfcda24be3c4565928e5b0e273091d4899576014cdb87c71d"
+    },
+    "azure-deploy": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1cf913a09e513aff1f0e0a20020f2a9325f3bad7f8cc33fab47e83a87cb27ad9"
+    },
+    "azure-diagnostics": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d0ce7f71e058d2e3c3c137c4e2aff439ad56ba5cad6dcd00a694fa0c75766593"
+    },
+    "azure-eventgrid-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "b3a3022778c0484d73b04459f32e42e2baaa7d76355e228e95551ed49a62cc4f"
+    },
+    "azure-eventgrid-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3b8d5efa2b6c0a273f0ffe7714f821c8117e958c3c30de37e47ca9c06ae277c0"
+    },
+    "azure-eventgrid-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "299dddbf4b919c2fdc298dcf48d83bae4210f31455ce8dfdf9d38632d2a4acf0"
+    },
+    "azure-eventhub-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "101be8b55e86620d8eb702b4abf0ba6938d69a88eed1939ab7bec6bb58808600"
+    },
+    "azure-eventhub-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "178b17c3b8f3099406c7d1ea88f6c97826a7757593de31df66f1238d86754987"
+    },
+    "azure-eventhub-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "2af624ad4e416515cd7144651a8665a3f6c736f1dd7646f17b94cda310ccbc53"
+    },
+    "azure-eventhub-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c287e68dbe593514bde8df3a97e988be8f705e9cd551a94a0934d03096472fd4"
+    },
+    "azure-eventhub-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8f37dae2718275c930337374dacbc5848c56bba831f0b22653fe95b8e30bd8d1"
+    },
+    "azure-identity-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c652ca03250f1e99adde7843ac96ccfe33f52bd039c5fb8ac072ce6cceeb69ab"
+    },
+    "azure-identity-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c34099f76f58ef156eac973606f8b7e1ef1c0b439aef25763c00579fc15931d9"
+    },
+    "azure-identity-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ed709f2f312f7a1634dcd8a2c9189519971185cfa4a0fa5823dd4e258c41224e"
+    },
+    "azure-identity-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8024e4c97697c88945a13d4d217b08a9fc1df9ebeae08a55caa3b99c82b83232"
+    },
+    "azure-identity-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1938f2d2af99e310d0299c49f33a09ffc8090118dc862af2de54e26fa7feb0f0"
+    },
+    "azure-keyvault-certificates-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "df20d48c3014e4959b2f3e67a7c587d03dbebdc22e85e6b92c5463a5f8f44ddd"
+    },
+    "azure-keyvault-keys-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "295b1b6cf7e1ca8fd8f6aa04b375089fbd320a41927e9becc09c91b7c7c73b4f"
+    },
+    "azure-keyvault-keys-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "12674a8691f16270249b1bc7438f78027b983d5173f42479c98da3026b4756d9"
+    },
+    "azure-keyvault-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e7665acc4b62d8fd2f69af72ead0c81a853de12310c65a4e2eb1b441baa3dff3"
+    },
+    "azure-keyvault-secrets-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "10856a4e5009cc2681f6e28023e6b8d7141fe517d2e418f0cc85172de01436c0"
+    },
+    "azure-keyvault-secrets-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "cdc858b510086a2ad91c9df5f8c4aeffa2c0655550db8d26af8f2c12efb599f4"
+    },
+    "azure-kusto": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "376cc8662b70eccd8244e2e5b9882594fc2e826839383de636b5bddb5ce4b8e7"
+    },
+    "azure-maps-search-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d2e903d21264f2f0871b3e162a8a9ba201e225efcb14e24ca9b99859277c92d7"
+    },
+    "azure-messaging-webpubsub-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f285c4eedf3178f4687c2a2082706482816ae667e0add2ace0333e9d9957f83a"
+    },
+    "azure-messaging-webpubsubservice-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "19188bf4b0e0e5180592fe27483266332ae75e05d9f1c35187bb509de630c85d"
+    },
+    "azure-mgmt-apicenter-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ce74a36756ceee411e057f49818dacd1160ac0a6dc47686d42ec50aa0fd9debd"
+    },
+    "azure-mgmt-apicenter-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "7dfabcf5773dc6c30d79a33bf1e38390adb3754f5d30b734ba54f420dc35a66b"
+    },
+    "azure-mgmt-apimanagement-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "7ebc237a2ed11aa913e75d577cbcbe59b5c5ab910be5f3d0e095c207610722cd"
+    },
+    "azure-mgmt-apimanagement-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f87ffce0cb01e31ad7ad7c3d7913c4044a73517fb8d92e938b47a93340eccc3c"
+    },
+    "azure-mgmt-applicationinsights-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f054f87b868aff757dd38dd3549712820ac729d791909254b8ebbb8244826c66"
+    },
+    "azure-mgmt-arizeaiobservabilityeval-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "21a84faf64c6a6df1ff4794646136ff78ee47a31347434181505d35985944a37"
+    },
+    "azure-mgmt-botservice-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "39f508cb8affd59a1b025c5c440c9864ede4c3acdaebeac9c0364cba96bb660f"
+    },
+    "azure-mgmt-botservice-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1fffb8d5cc43a9b84e850143d72623f13e86bb6bb087a6a33f89a6eca001138f"
+    },
+    "azure-mgmt-fabric-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "58bbdc2731149e1a61e75f40c1b9cf6f6d174dfce1677485d7ca26da44e29897"
+    },
+    "azure-mgmt-fabric-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c02dd0765087a656d428f04954213151eb87fac06b10a576f00a8c5ce39b8c63"
+    },
+    "azure-mgmt-mongodbatlas-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "77c2fb91f68b6786a59e0be8945d95ebec94f1bf71d0a2f8ea01f5c5d21d11ad"
+    },
+    "azure-mgmt-weightsandbiases-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c394663509601ed19905862cf327933a928515def2fa01d3aa5a6a50dd77b355"
+    },
+    "azure-microsoft-playwright-testing-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5298992eef74d7bb7ff09ddb1b08ec99039e6ac7b90646f8b21121ade7bbc4a7"
+    },
+    "azure-monitor-ingestion-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "295001477f0d61d6cb8ff4f5410fce59b35b148fe9e41c57b9b1e6b1f02558dc"
+    },
+    "azure-monitor-ingestion-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d9c7feb605be359fad1b57a8e59a24d315edfbcad0002f97ca92e9df3b921857"
+    },
+    "azure-monitor-opentelemetry-exporter-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "fc03f4c34ed01c3b0876a55bde2b29825711da838df8a04ff04395712bdbe214"
+    },
+    "azure-monitor-opentelemetry-exporter-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3588450893d94d4fbbfad8902af7ae343f0e8d54e4e454dab80962cd85c454a6"
+    },
+    "azure-monitor-opentelemetry-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "604549411049d0a5e028aca03e80f782eddcb36426d76745adb0fc1ecb303354"
+    },
+    "azure-monitor-opentelemetry-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c5b3cfee9a51097600a08601fd3c2e89715f55a64601771ecbe6cbbb5ba65443"
+    },
+    "azure-monitor-query-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f47715b6ba79ef092c596577e5abaf91b341201a6ad1bb0cee22d5d5bcf2225f"
+    },
+    "azure-monitor-query-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "bb92f1606e5453db80444a57e6ef2fa0f559c977cd2b689f361df18819e42563"
+    },
+    "azure-observability": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "b68b2251808f4c0cabb940cca8d57ec79c29a7887eaad875d052335bf99893ff"
+    },
+    "azure-postgres": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "2491938cf895fb51bdba177701c69ea9662cdc552666e7f197a80d4fcbceb94b"
+    },
+    "azure-postgres-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "f54800b2b5a35471d9d3600ca7eba078cc3a1418ca0f574ce3ac23f48cf52240"
+    },
+    "azure-prepare": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d503f757899ba36298526b4260881f6e4851123975fdadba18f3e378e4479a90"
+    },
+    "azure-rbac": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "321bed14917d42fb10b49617acd19ac95751f1549fda2a1bff9d099b93df3561"
+    },
+    "azure-resource-lookup": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ca8acbe539941cb5ffed6b17d3feb2f0e48c9b5a6a69f1e98477eccf664d025f"
+    },
+    "azure-resource-manager-cosmosdb-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3b26c39d7f5abfec77f2b895ed405d052347496d1985889af04b67fcff04fe1b"
+    },
+    "azure-resource-manager-durabletask-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "9abcc6ae12c5806e9f2ded2220b6adb55a0dad84c07a1a3ac5dca05a19db7163"
+    },
+    "azure-resource-manager-mysql-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5c3d92303002a2fe1ff2cbb546522c4922cfd3996eb1f1b1066af334065c1ff8"
+    },
+    "azure-resource-manager-playwright-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "10a1c98f454a9e8c7df51778a9a2992f47b64c35f557696f83ce172191e971ef"
+    },
+    "azure-resource-manager-postgresql-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8c9f1652aa58eeba4405b6f628fa0477d5a22a91c31a6bf0aadc8eed0273d85c"
+    },
+    "azure-resource-manager-redis-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0cc88b5e97545e4fbe618f8e74c030240af2dcd16f9ef0a84896fb011fd839c9"
+    },
+    "azure-resource-manager-sql-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c2618dd21d035aa977d184313a69304a9457733e76f2ae1a8b905af2aa3d09d8"
+    },
+    "azure-resource-visualizer": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "67c7b20be10085ce3cafddabe49a51cff384686475a1c7405130082378489c7c"
+    },
+    "azure-search-documents-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1c921b6f6bb8515e88c5bb65d76e2d500df317746b9a2f1855d0c55e4e01db29"
+    },
+    "azure-search-documents-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d9cb5ccf145f4bc2166919c156f27286546f4ce9480d06c4bc91e81ccc7546ba"
+    },
+    "azure-search-documents-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "414660ef3e3451998152d5a7cf28919dd85ba3ba6b2481b7331b5882ad7de9d2"
+    },
+    "azure-security-keyvault-keys-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "cfd11499d45409e522bf7872a7378938285aa55f7a92a8422ddaf5020d7431f9"
+    },
+    "azure-security-keyvault-keys-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "696e6dc5112839d5af2abc73380c319750db1a1f8d59649fd522d990c766c2bb"
+    },
+    "azure-security-keyvault-secrets-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5ed4a5fd34059d6b761fabe364373db895eab39aef6b6c045d974408044ff3b8"
+    },
+    "azure-servicebus-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0cc16518911fe98fead42982a6ef8d8cc9943204ff7444edd6335848bfa3bafb"
+    },
+    "azure-servicebus-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "737bc221b929d9b4e4b196fe27a5656592c96c397e5a8e13671d8a1a41202ac9"
+    },
+    "azure-servicebus-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "77547d74a57cec4480e0fee778cca7aa10a4f338ba42a8003b9f1688bd651bae"
+    },
+    "azure-speech-to-text-rest-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0e3c4123a2e30d7ff9d8a7245f251177ab1f9b1e0a4337b7c16aaa19c3fefa73"
+    },
+    "azure-storage": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ff05187e8d59cd73c53f627806f092b17c2ff5d75d6a6fcfa4df07795d9adcb2"
+    },
+    "azure-storage-blob-java": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "b32aaf32c2e744fed0b411c17e96f72d941ed109ad266ece295e9c048d5336d4"
+    },
+    "azure-storage-blob-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3bf40c7450a9d12e87dca7672d8196b8d426a174ca1905571a8e6f5523b8f6a8"
+    },
+    "azure-storage-blob-rust": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "abb0ca8f02181359ffb60244be526e9465e9068e51c4c483d5b05d9abc184eb2"
+    },
+    "azure-storage-blob-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e0422e60337dfe60820c8e74d2d64aa67216653cd8d38a8fa872f458667c189f"
+    },
+    "azure-storage-file-datalake-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "44cf20a00a39ccb6a69c46524a8e4b6befe88a903895aef098cab903848e0306"
+    },
+    "azure-storage-file-share-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "33786cf39c7b1234ea02cbbcee6ead2d5733cbef9e28ff1b80496d577b7bbe92"
+    },
+    "azure-storage-file-share-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "23f3bb47502259be2dd2869e567cf893fb001f1c874720e0067147d12b0f12cb"
+    },
+    "azure-storage-queue-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "e65f4c3e60956ed07855992ad66f02537761c3dddc235f7d6c9125b37771b65a"
+    },
+    "azure-storage-queue-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "22e900bac4c8b0148c46fae994ec47f7154c3a3d821e747b971e22d045a41932"
+    },
+    "azure-validate": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ff2146af9272f78ac7ba87adac6918964762e6191b7c0289578c383e70e36d7f"
+    },
+    "azure-web-pubsub-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "46a169315d9c9d64c107b84220b41d0add1734e37cb52b0c1eb5eee171330b45"
+    },
+    "brand-guidelines": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "4aa754f4f7fc54ac3e7f6e2fb55c0e2fb14b7d70da077b41a86bd1889ff9094c"
+    },
+    "canvas-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "a2fe47d24b3fd8e52faef731fff099c557e698083cd644b2e5695cc4dd8c7715"
+    },
+    "chatgpt-apps": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "f2acb240f8ba7e8a11d13cd2f0da83232d8729186279b1d20548ec4760223bad"
+    },
+    "claude-api": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "ae0442705d2ce9338f91fffafa423172abfa85c7c9b85f13dece6cdc9b1681cc"
+    },
+    "claude-opus-4-5-migration": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "b03b91554e25480cd5dfdcb8e1c797a4703b9ed5e303593c9ac338d6d43c040a"
+    },
+    "cloud-solution-architect": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "a2ad72ed97eb04000edddb60bc2feae33f4fe4e14727663e32ebb616c2edfe21"
+    },
+    "cloudflare-deploy": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "72e2f6fec78aecc84994c1c23e74fcd7f09328c8ab61ff12d957a956e1784179"
+    },
+    "code-reviewer": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "ac45cbe57cf1e5f2110e6a68238c5681f97007904d65b6858daa080dc69d7abc"
+    },
+    "content-creator": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "8a40efacec188736eb229b9605df4d6a3c9d42e5ec08765e31dd5d2ad2c679cb"
+    },
+    "continual-learning": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1f7c1a79d6ee166aac48591acbc9165778d2384fa9e84405099750b6e065c0c7"
+    },
+    "copilot-sdk": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "aa06b65b8b191c128872561413910cc92d9ab292418a0e451bc61b1579c29b57"
+    },
+    "data-analyst": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "4fd5f18349b1eea7d7026e7d8a5d22b7856477ffb6796de9cdc68e374777a8c2"
+    },
+    "debugger": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "609b0b6d79fe21bcb5eb8a01b38f5571b8ae05be826936a312bc04d9c5400193"
+    },
+    "decision-helper": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "ecc452103f3cf850b4d7c9055fc1fe02449fd124ea61f48bd0a1cf83c8538bc0"
+    },
+    "deep-research": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "2d3df26fe507ef612bfbde09ed1c8691e17769b430c91fddd5743cd37f4c5672"
+    },
+    "deploy-to-vercel": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "d2b5bcc7c09fdb649129ffc7dd7b647ec1b155736974b974292675afd588cb39"
+    },
+    "develop-web-game": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "ce15d03cc8c299e062c6b6b31a1238264b06c7b23900a58861e53073e1ac9739"
+    },
+    "doc": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "7f8bfe9d1cbd6cb9a3617556387f2ac48911058a26d89345673c4565bb11717f"
+    },
+    "doc-coauthoring": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "b964e4c3ffe13f66f76dd7919073e60c7aec622cd8a8363bb36323188100cf8e"
+    },
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "6962db07127ee540a56e4677f65576d0727668a1d67f7da8bc978f10791c2bfe"
+    },
+    "editor": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "6956636eab9a2a0f102926ba7ac0cdaffa5fdccb8061a428aec1ae0874b8820b"
+    },
+    "email-drafter": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "8e8a390730cb28f26c61ae0dd1bedc96d80c48be0d8ed107c6ec1a99ab3101e1"
+    },
+    "entra-app-registration": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "c4a6502ce7a0ad00d3bea3f77d28d30d41f2d3e0f2a3e65334b3a2a93fcc8417"
+    },
+    "fact-checker": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "fb8df7db8d769f67f25a425cb03afe8916da96ac739ba5cf65c5f90faa225531"
+    },
+    "fastapi-router-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1ac65a50ddbd0b9c018b0b929cf7441dfd58a87b7a9babbfa6b49f6813f1ed3c"
+    },
+    "figma": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "b73e3dc60f2531c0fed4b086c63ace91c2b6bdd80f5c747b9309fcbe0c4905b9"
+    },
+    "figma-implement-design": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "d6f7141e613b102b1c4b0abb392b4d5b57d2a7ea5d0036cfea85038dc24120ed"
+    },
+    "frontend-design": {
+      "source": "anthropics/claude-code",
+      "sourceType": "github",
+      "computedHash": "e8118284a6365753790d44bb2758a6032b3af27fa84696428d9233f2be0f4e78"
+    },
+    "frontend-design-review": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "bdfcadec9604ec0225f337ffbcecb8c8a5ddf69b6b1a1335963df97a0665472e"
+    },
+    "frontend-ui-dark-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1b892ece7247b97fa6faa35754b30eedec11eb9dde83b8b39783f7fdb6afc38d"
+    },
+    "fullstack-developer": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "d824d75875b289753740c12ba33c005a40f0d996f12d3424cabf1ef9ad4cd1a3"
+    },
+    "gh-address-comments": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "0a480d4fe8deb31852cd47ec8708e66b66b94875a23ba7679b17cf11ae9255a0"
+    },
+    "gh-fix-ci": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "1b1ce4eeeae2bfc175d05f1b69e07b17dfa1fddf99a96c22b6dcae7e5fb4e550"
+    },
+    "github-issue-creator": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1d19ed1e52436c28746d35f53113050d09b79c090a8bd3a6148b4570a3531374"
+    },
+    "hosted-agents-v2-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1416a8b23b576452ea30d31cff4fa329bd4c3e99d2648f4b5e5352de5916a870"
+    },
+    "imagegen": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "473ddcb8fa4a5e815e51b7309996d051317d575ae0fcd40883d427452f7be76e"
+    },
+    "internal-comms": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "b36b333bee983462008af46d74689ae5832c2f79ae5f2c18680ee82f6e6bef56"
+    },
+    "jupyter-notebook": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "aec85b4976af33923f957db1667207dfe8418592ddd91bbe4da24bbdc3058d8c"
+    },
+    "linear": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "702e1b8bb122bb981d276fbdcaa2fde1435b8c548910e1b365f088735b7a5365"
+    },
+    "m365-agents-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "14e31b73c2c12c35b7b54384e577d0475fd6860fb011cd63d9a3a1a6e16bb414"
+    },
+    "m365-agents-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "d7c25c001a4b4fd6dbcd86d0766f4a47ec1c9c234ee7a4c4f81ca05881c23db3"
+    },
+    "m365-agents-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "31fcd91fbb6484e9fe80ee273d41cfb8b95bf87fbf4fbbae106150f3874b314f"
+    },
+    "mcp-builder": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "da280c26ceee48533ce8b39e5492d81b4a74b65732988cafc50668371dfeb525"
+    },
+    "meeting-notes": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "f2e8df4e4b7e4cf752e50d84fab5f33353f0adf212f128d570be4d1142d1bb40"
+    },
+    "microsoft-azure-webjobs-extensions-authentication-events-dotnet": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "b00dae2abf80464426c8016c8beefff7f12a0f94a4135e75734a8806d29493f2"
+    },
+    "microsoft-foundry": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "8ea340f5ae04129a4cdeed653afd74a04157a8de3db3e049efbaa850670c5488"
+    },
+    "netlify-deploy": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "1c8b071c2673df67a4ed681bd5c06e236c7a9ca7265cb1088a54f2ef3b906f9e"
+    },
+    "notion-knowledge-capture": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "c1376422aec0fb3a4733e5a8a99eed4feff24fa45e25a2ffddaf07a68eed9198"
+    },
+    "notion-meeting-intelligence": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "72f8805776688085ca6f748c313bdce9ebdc088ea1e9ac192689746b6b39fb33"
+    },
+    "notion-research-documentation": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "8dcb27b1c12f087568b4cd8b1f7ea576067a0c8df9af6addab78ef6975742ac3"
+    },
+    "notion-spec-to-implementation": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "887f15eb25fa806869f8eb04b16a697f678431da4a744ecdf9d136ef76c4132b"
+    },
+    "openai-docs": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "f30e060aa8f10dbd0b921205b76a44debed70a954d2fdfbdfb9c0a2bd0b96f56"
+    },
+    "pdf": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "ae0a8fde8447e83a08edd0baf5373cd52febce32494e47e17d5d695a441a1884"
+    },
+    "playwright": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "595a334de3bd5335f442a33d1bdefb01207c88c99fe43e3bd99b0d5435f230de"
+    },
+    "playwright-interactive": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "11e4215d9b57460ad1aaae461eb9b08e4d58b808418f97abe156146e53b05d36"
+    },
+    "podcast-generation": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "03945cb32ee3270d7063671d5a57e9341552d96b35bd6e2dbce5e8039ec8c929"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "6b8b859d26f93aa059c9870d1ab76b44ab69e3d6757ce4a03cc94cb760888073"
+    },
+    "project-planner": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "62897927d02705437bb82e3f6d622c29e3b43593d84967da60a014b623353f1f"
+    },
+    "pydantic-models-py": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "53778216c89c91c28a9a51bb170e535e2d29bab2c539f542cc8f218cbac2ec43"
+    },
+    "python-expert": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "7ddc44800aef275b3252ffa65369e214ef2a56603842e3f6721363816eb6b45f"
+    },
+    "react-flow-node-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "33102fbcf0b8b9c6b763c66dcec480fcce29303d4bcde3f086931d8d7bb43b82"
+    },
+    "render-deploy": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "3d5d532563bea44a0bd852b9d890fea848e1549035638e3ca119f0016bfb4632"
+    },
+    "screenshot": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "2dc50b3537ea27a1020a660ff17f12860f6ad05bcf40539165eb4655e5010d73"
+    },
+    "security-best-practices": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "c27616fb4e27999605b90b261dc729784420c8d77bd1a98748384ffaa5b35704"
+    },
+    "security-ownership-map": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "0eefbaabdbe0ccfc39555195b9a7f7c8369abe1b4dc969aabb2e5aec8c3705ab"
+    },
+    "security-threat-model": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "b3ad2dc0b2eee1f189680fdb8cf3b17853f12ab3403d389393f4237ebc6f9821"
+    },
+    "sentry": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "ded66300cf449c4507b54964f5536dc86d8697654f0ea4b5986c1a9cd278f3c0"
+    },
+    "skill-creator": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "5a4851efe2b68b3178075e630a26815c9f665d4ceb5fc224a33259f6d636a31e"
+    },
+    "skill-installer": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "2365e7810685a13e90bb29ae885d979b1de150629a66a51d09be3c19e4ca3d70"
+    },
+    "slack-gif-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "146d0f407e3f04aac0378b74bb238833b24bbd5e6387b932e82cfbf228f219b4"
+    },
+    "slides": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "1aa418c52c6425757f5cfb29b14cb8bd34e8c153f0ddd4404771889f85d57681"
+    },
+    "sora": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "4a8785e931fb834a62d46030dc9067204d27d541b193e18b49e02ab47259a78f"
+    },
+    "speech": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "767adf188f0beb4b45f4b60cfe1945f1f104884ff3d1597e09825dadcea5f7fa"
+    },
+    "spreadsheet": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "532287cf8e831de5b45f3e2196dc123e16374c61e459664649f0261c5aadd5c6"
+    },
+    "sprint-planner": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "a3836dd84fe070fb78e777300332c3c9e293718af642518d776eeb66bc8665dd"
+    },
+    "strategy-advisor": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "b89ff6935fb1a7607bae1fba36dfe84963c633750048e3db0a085c4f5c3ca79c"
+    },
+    "technical-writer": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "e1ccd2334efd9b2137844568db30b0a1c6679404b474c216476c59e22ad08c28"
+    },
+    "template-skill": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "38c88f722b574a922311d334a70c2008a2a5b896f06eaa75516d716e5725b26f"
+    },
+    "theme-factory": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "93e78aa44f8fa00bb2c0608f400de1e1dcd6494611dd8ea27c867654240c7bcd"
+    },
+    "transcribe": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "0391b3fba28374df131946e0b515e62f5e2a9b51013d05a35791944ca6853dff"
+    },
+    "ux-designer": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "1178ae59d9dd5ca71122674d85bd78d746b3b95f76c58c65cb0fd48dd54bea45"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "f98931159fa9c7fed043bcd18a891a46dcf89ababa38df13a4c5b7b30dc0ce07"
+    },
+    "vercel-deploy": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "1bbc267739a93506229ae565d8dc56a13caae8dfc3b727957b966109a8da00d0"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "3462ec83f862abb2d532953df33a4dbf87f4616849da5d4b5cc7c13601aaf997"
+    },
+    "vercel-react-native-skills": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "2e9088a7333666d8c2833b8ff58bd51b955501c42b4c7244f72b4cbf22dafcc4"
+    },
+    "visualization-expert": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "cd8f8bc48c6790cb3b25a13e7a7b05dccd6fd5213577ca59d3c232282d1e151a"
+    },
+    "web-artifacts-builder": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "143730c6db11d82d8c5db4d0cf8f435421983f1fc510b24f77ee9a0e8bae7704"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a"
+    },
+    "webapp-testing": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "cf8e5916d474886bd67b09691247f43f331523008b7d366064bc607ab42d6302"
+    },
+    "wiki-ado-convert": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "ae39690bdaf3f1fd482c27733910653f6b21366c2ec78f7a45e3b1ead3166ed1"
+    },
+    "wiki-agents-md": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "3315bc13307c5e118115b2e0b2a1b4a50d72cd7725f0dd9753ee8abeb656b238"
+    },
+    "wiki-architect": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0c03f037b5d40770a0e5744a63c372693b999b7a3d269ea9c4d2bf60add27f95"
+    },
+    "wiki-changelog": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "81728cf37de3df99529a0c3afd71d84d2ebaf0259fc13770cbdc05e2ef9ffa4f"
+    },
+    "wiki-llms-txt": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "95444de64257def4d3f2b0737e15abca8bd93c5ba76e08cb7f9fc68e97444b1b"
+    },
+    "wiki-onboarding": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "afe0425d6d86493bc9146eb4b25cbdf62d5d6ec86aea8b5c0be098c9492c7463"
+    },
+    "wiki-page-writer": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0c232bfb2587c477bd4fd4916901be225b94bdc8b16fcb97fc22fcfc786d5d4c"
+    },
+    "wiki-qa": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "1b9ebef1410fb9311dfdbd7fa4cee66042a8340d4b66436b2c8f4fd23cc92838"
+    },
+    "wiki-researcher": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "0b1eef5610c938b79142fef7a90dae5e500c85e5f427dbcc3f92764a329cc98b"
+    },
+    "wiki-vitepress": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "6ec525345427dba822d125e02cefd9b3420aa70f9de500dadc0839d9cbeb55d8"
+    },
+    "winui-app": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "6231a756230fbf412b05e38249d47c3ced6ab51944bcfb6ea3452f026bcbe848"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "efd0c8011cf0677d8075cf93867ecec804f9a8754a777e1d2fdb46197e9c247f"
+    },
+    "yeet": {
+      "source": "openai/skills",
+      "sourceType": "github",
+      "computedHash": "09d77be4566a654c0a7aa64fafbf4244ea154e7df09bc61814e71510bdad9f0c"
+    },
+    "zustand-store-ts": {
+      "source": "microsoft/skills",
+      "sourceType": "github",
+      "computedHash": "23efa786ff9b32547557ac75de5084fd9e2a066a01a1fe1860dc80ac7a15e7b1"
+    }
+  }
+}

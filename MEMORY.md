@@ -121,9 +121,35 @@ Agents should periodically:
 ---
 
 # 10. Last Consolidation
-2026-03-06
+2026-03-09
 Agent responsible: Claw
-Summary of changes: Added user setup context, conversation history notes, and agent OS status.
+Summary of changes: Phase 2 complete. Full design entity architecture live — 8 layers operational.
+
+### Major Accomplishments
+1. Design convictions moved into Devan's SOUL.md (permanent character)
+2. MEMORY.md with Command Center post-mortem (first design wisdom logged)
+3. design-pipeline.lobster.yaml (deterministic workflows)
+4. Claude Code integration (zero-cost orchestration)
+5. HEARTBEAT.md watchdog (autonomous monitoring every 4 hours)
+6. Hooks layer (agent:bootstrap + tool_result_persist)
+7. CSS linter (real-time banned-property detection)
+8. visual-diff-loop (autonomous convergence to 0.5% drift)
+
+### The Complete Stack
+- Opinions: SOUL.md design convictions
+- Learning: MEMORY.md post-mortems
+- Parallel Work: Lobster + Claude Code (zero tokens)
+- Monitoring: HEARTBEAT.md + Pixelmatch
+- Real-Time Correction: Hooks + CSS linter
+- Self-Evolution: Ready for self-skill-writer integration
+
+### Cost Model
+- Orchestration: Claude Code (local, zero tokens)
+- Creative Decisions: API models (only when quality matters)
+- Visual QA: Pixelmatch + CDP (local, zero cost)
+
+### Next Phase
+All systems operational. Ready for production testing on real design project.
 
 ---
 
@@ -145,6 +171,32 @@ Summary of changes: Added user setup context, conversation history notes, and ag
 
 ---
 
+# 14. Phase 5 — Supabase Schema (2026-03-07)
+
+## Status: LIVE ✅
+
+**Project URL:** https://jcfsmpgugqqsasfrswyw.supabase.co
+**Anon key:** stored in LOGGING.md (agent-accessible)
+**Service role key:** Brett only, never stored in agent files
+
+## Final Schema
+- north_star
+- agent_logs (+ run_id, archived_at)
+- heartbeat_logs (+ archived_at)
+- agent_costs (+ run_id)
+- todos (+ run_id, archived_at)
+- agent_status
+- north_star_history
+
+## Credential Policy
+- Anon key → agents use this for all reads/writes (RLS enforced)
+- Service role key → Brett only, DDL via Supabase SQL Editor
+
+## Dashboard Build
+Gated until schema was stable. Schema is now stable. Dashboard build is unblocked.
+
+---
+
 # 13. Config Change Lessons
 
 ## Never edit openclaw.json directly while the service is running
@@ -155,54 +207,35 @@ Summary of changes: Added user setup context, conversation history notes, and ag
 
 ---
 
-# 12. Agent OS v3 Status (as of 2026-03-06)
+# 12. Agent OS v3 Status (Compacted 2026-03-07)
 
 ## IMPLEMENTATION COMPLETE ✅
 
-### Agent Roster (Final Names)
-- **Claw** (Orchestrator) — using claude-haiku-4-5
-- **Bernard** (Strategist/Chief of Staff)
-- **Christopher** (Research Intelligence)
-- **Devan** (Technical Builder)
-- **Vale** (Growth Strategist)
-- **Scribe** (Communications Specialist)
-- **Atlas** (Operations Manager)
+### Agent Roster
+- **Claw** — Orchestrator
+- **Bernard** — Strategist / Chief of Staff
+- **Christopher** — Research Intelligence
+- **Devan** — Technical Builder
+- **Vale** — Growth Strategist
+- **Scribe** — Communications Specialist
+- **Atlas** — Operations Manager
 
-### Concurrency & Delegation
-- **Total concurrent**: 4 max
-- **Claw to Bernard**: Sequential (1 per active task)
-- **Bernard to specialists**: Max 2 concurrent subagents
-- **Sequencing rule**: Research → Strategy → Execution (no parallel unless independent)
+### Workflow
+Brett → Claw → Bernard → specialists → Bernard → Claw → Brett
 
-### Agent Behavior Definitions
-- Full org doc: `docs/AGENT_ORGANIZATION.md`
-- System prompts locked in for all agents
-- Role boundaries documented
-- Escalation protocol defined
-- Output standards established
+### Model Assignments
+- Models are assigned per-task and change frequently — do not hardcode model names here
+- Check `openclaw.json` agents list for current assignments
 
-### Model Configuration (2026-03-06 Update)
+### Team Standards
+- Logging is the contract
+- `north_star_id` is required on all entries
+- Bernard reviews and signs off before specialist work returns upward
+- Dashboard build begins in Phase 6
 
-**Primary Models:**
-- **Claw** (Orchestrator): claude-haiku-4-5 | Fallback: claude-sonnet-4-6
-- **Bernard** (Strategist): claude-sonnet-4-6 | Fallback: claude-opus-4-6
-- **Christopher** (Researcher): gpt-5.2-chat-latest | Fallback: gpt-5.2-chat-latest
-- **Devan** (Builder): claude-sonnet-4-6 (default) | Fallback: gpt-5.2-codex
-- **Vale** (Growth): claude-sonnet-4-6 (default) | Fallback: gpt-5.2-chat-latest
-- **Scribe** (Communicator): claude-haiku-4-5 | Fallback: gpt-4.1-mini
-- **Atlas** (Ops): claude-haiku-4-5 | Fallback: o4-mini
-
-**Rationale:**
-- Sonnet for strategic work (Bernard, Devan): Highest quality for reasoning
-- Chat for research (Christopher): OpenAI for web search capability
-- Haiku for lightweight tasks (Claw, Scribe, Atlas): 60% token savings
-- Codex as Devan fallback: Specialized for code execution if Sonnet unavailable
-
-### Bernard's Intelligence
-- Required to ask **before** delegating: "What is the actual goal? What information do we need first? What is the correct order?"
-- Must break down complex requests into structured task plans
-- Must review all outputs before returning to Claw
-- Must synthesize specialist outputs into unified deliverables
+### Current Phase
+- **Phase 5**: Complete
+- **Phase 6**: Dashboard build next
 
 ### Legacy Archive
 - Old agents archived to `_archive_legacy_2026_03_05/`
