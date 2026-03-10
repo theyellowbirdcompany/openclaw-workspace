@@ -22,7 +22,7 @@ This is the target aesthetic for our Command Center:
 ## Active Tasks
 
 ### Task #007 - 2026-03-09 22:33
-**Status:** OPEN
+**Status:** IN PROGRESS — Phase 1 & 2 Active
 **Posted by:** Claw (from Brett)
 **Assigned to:** @Bernard @Christopher @Devan @Vale @Scribe @Atlas
 **Priority:** Mission Critical
@@ -125,6 +125,131 @@ Credentials are documented in `/home/clawd/.openclaw/workspace/projects/command-
   - **Next:** Delegating Phase 1 (Security) to Devan + Phase 2 (Research) to Christopher
   - Timeline: 29-40 hours estimated, 5-7 days calendar time
   - Status: Moving to Phase 1 execution immediately
+
+- [2026-03-10 01:22] Bernard: 🚨 PHASE DELEGATION ACTIVE
+  - **Assigned Task #007.1** (Phase 1 - Security) to @Devan — URGENT
+  - **Assigned Task #007.2** (Phase 2 - Research) to @Christopher — High Priority
+  - Both tasks delegated via new subtasks below
+  - Monitoring: Next check-in at 01:45 to validate kickoff
+
+---
+
+### Task #007.1 - Phase 1: Security Foundation (URGENT)
+**Status:** ASSIGNED - Awaiting Start
+**Posted by:** Bernard
+**Assigned to:** @Devan
+**Priority:** CRITICAL — BLOCKS ALL OTHER WORK
+**Due:** 2026-03-10 04:00
+**Est. Duration:** 2-3 hours
+
+**Mission:** Fix all 12 Supabase security warnings before any other development proceeds.
+
+**Context:**
+Read the full Phase 1 specification in `/home/clawd/.openclaw/workspace/COMMAND_CENTER_REVAMP_PLAN.md` (lines for Phase 1).
+
+**Your Tasks:**
+1. Audit current Supabase RLS policies and functions
+2. Write SQL migration scripts for:
+   - 3 function search_path fixes (explicit search_path parameters)
+   - 9 RLS policy fixes (replace `USING (true)` with proper auth checks)
+3. Test migrations in development environment
+4. Execute migrations in production
+5. Validate 0 warnings in Supabase database linter
+6. Document new RLS policy structure
+7. Create rollback plan
+
+**Deliverables:**
+- [ ] SQL migration scripts (all 12 fixes)
+- [ ] Security audit report (0 warnings confirmed)
+- [ ] RLS policy documentation
+- [ ] Rollback scripts
+
+**Acceptance Criteria:**
+- Supabase linter shows 0 security warnings
+- All agent tables properly secured with RLS
+- Anonymous access restricted appropriately
+- Service role access still functional for agent writes
+- No data loss or service disruption
+
+**Resources:**
+- Supabase credentials: `/home/clawd/.openclaw/workspace/SUPABASE_CREDENTIALS.md`
+- Function fix guide: https://supabase.com/docs/guides/database/database-linter?lint=0011_function_search_path_mutable
+- RLS fix guide: https://supabase.com/docs/guides/database/database-linter?lint=0024_permissive_rls_policy
+
+**Check-in Required:**
+Post progress update to bulletin board when:
+- [ ] Audit complete
+- [ ] Migrations written and tested
+- [ ] Migrations executed
+- [ ] Final validation complete
+
+**Updates:**
+- [2026-03-10 01:54] Devan: ✅ Audit + migration package drafted
+  - Created migration: `/home/clawd/.openclaw/workspace/projects/command-center/supabase/migrations/001_fix_security_warnings.sql`
+  - Created rollback: `/home/clawd/.openclaw/workspace/projects/command-center/supabase/migrations/001_rollback_security_warnings.sql`
+  - Added docs: security audit report, RLS policy structure, rollback plan under `/home/clawd/.openclaw/workspace/projects/command-center/docs/security/`
+  - ⚠️ Blocker: this runtime has no Supabase CLI and no browser relay; cannot execute SQL in Supabase dev/prod directly from here
+  - Next required step: run migration in Supabase SQL Editor, then run included verification queries to confirm 0 linter warnings
+
+---
+
+### Task #007.2 - Phase 2: Deep Research & Design Specification
+**Status:** ASSIGNED - Awaiting Start
+**Posted by:** Bernard
+**Assigned to:** @Christopher
+**Priority:** High (Runs in Parallel with Phase 1)
+**Due:** 2026-03-10 08:00
+**Est. Duration:** 4-6 hours
+
+**Mission:** Research best-in-class command center UIs and compile innovation opportunities for our dashboard redesign.
+
+**Context:**
+Read the full Phase 2 specification in `/home/clawd/.openclaw/workspace/COMMAND_CENTER_REVAMP_PLAN.md` (lines for Phase 2).
+
+**Your Tasks:**
+1. Research 10+ best-in-class command center UIs:
+   - Military/defense operations centers
+   - DevOps/observability platforms (Datadog, Grafana, New Relic)
+   - Gaming command centers (StarCraft, Eve Online)
+   - Multi-agent system dashboards
+2. Analyze isometric dashboard design patterns
+3. Study hexagonal/pod layout systems
+4. Document interaction models for real-time collaboration visualization
+5. Compile technical recommendations for isometric implementation (CSS 3D vs SVG vs Canvas)
+6. Identify innovation opportunities beyond current implementation
+
+**Research Focus Areas:**
+- Isometric visualization techniques
+- Real-time collaboration hub design patterns
+- Metrics dashboard best practices
+- Agent identity visualization in multi-agent systems
+- Spatial UI navigation patterns
+
+**Deliverables:**
+- [ ] Research report: "Command Center UI Innovation Study" (markdown)
+- [ ] Visual inspiration board (links + screenshots)
+- [ ] Technical approach recommendations (isometric implementation)
+- [ ] Interaction pattern library (collaboration visualization)
+- [ ] Metric display best practices summary
+
+**Acceptance Criteria:**
+- 10+ reference examples documented with analysis
+- Clear technical recommendations for isometric layout
+- Actionable design patterns ready for Phase 3
+- Sign-off from Vale on brand alignment (when she reviews)
+
+**Resources:**
+- Design reference image: `/home/clawd/.openclaw/workspace/projects/command-center/command-center-reference.jpg`
+- Brand guidelines: `/home/clawd/.openclaw/workspace/BRAND.md`
+
+**Check-in Required:**
+Post progress update to bulletin board when:
+- [ ] Research phase complete (5+ examples documented)
+- [ ] Technical recommendations drafted
+- [ ] Final report ready for review
+
+**Updates:**
+- (Awaiting Christopher to start)
 
 ---
 
