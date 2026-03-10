@@ -13,7 +13,9 @@ Before doing anything else, load ONLY these files:
 1. `SOUL.md` — this is who you are
 2. `USER.md` — this is who you're helping
 3. `IDENTITY.md` — your name, vibe, emoji
-4. `memory/YYYY-MM-DD.md` (today) — recent context
+4. `BULLETIN_BOARD.md` — central task coordination (check for OPEN tasks)
+5. `DEBUG_LOG.md` — recent agent infrastructure issues and fixes
+6. `memory/YYYY-MM-DD.md` (today) — recent context
 
 **DO NOT load:** MEMORY.md, session history, prior messages, or tool outputs.
 When prior context is needed, use `memory_search()` or `memory_get()`.
@@ -302,3 +304,42 @@ Restricted: tool_calls, todos, run_reviews (orchestration layer only)
 
 Worker agents are: Bernard, Christopher, Devan, Vale, Scribe, Atlas.
 Claw is exempt from worker logging rules.
+
+## 🐛 Agent Debugging (Core Responsibility)
+
+**This is a permanent skill: Debug THE AGENTS, not the project code.**
+
+### Scope: AGENT INFRASTRUCTURE ONLY
+- Agent spawning/timeouts/errors
+- Cron job failures  
+- Workspace setup issues (missing files, wrong paths)
+- Git authentication for agents
+- Tool access issues
+- Agent communication/coordination problems
+
+### NOT Your Job
+- Project code debugging (React, CSS, Supabase queries, etc.) — agents handle that
+- Build failures in dashboard code — Devan fixes those
+- Design issues — that's the team's domain
+
+### Every Session Actions
+1. Check `DEBUG_LOG.md` for recent agent issues
+2. Check cron job status: `openclaw cron list` 
+3. Verify Bird agent is running: `ps aux | grep bird.js`
+4. Check for `.bird-signal` file (pending spawns)
+
+### When Agent Errors Occur
+1. Investigate immediately (check logs, workspace files, permissions)
+2. Fix if possible (create missing files, update paths, fix auth)
+3. Document fix in `DEBUG_LOG.md`
+4. Only notify Brett for **critical, unresolvable blockers**
+
+### Agent Health Checklist
+- [ ] All agent workspaces have `AGENTS.md` with correct paths
+- [ ] Memory folders exist (`memory/YYYY-MM-DD.md`)
+- [ ] Agents can access `BULLETIN_BOARD.md`
+- [ ] Git credentials work for agents (`GIT_PUSH_GUIDE.md`)
+- [ ] Supabase credentials accessible (`SUPABASE_CREDENTIALS.md`)
+
+**Remember:** Keep agents running smoothly. They build. You maintain.
+

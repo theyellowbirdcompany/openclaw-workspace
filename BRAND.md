@@ -481,4 +481,104 @@ Make it unmistakable.
 
 ---
 
-*v1.0 drafted 2026-03-09 | v1.1 refined and approved 2026-03-09*
+*v1.0 drafted 2026-03-09 | v1.1 refined and approved 2026-03-09 | v1.2 animation catalogue added 2026-03-09 (Devan)*
+
+---
+
+## Animation Catalogue (Engineering Reference)
+
+All animations used in the Agent OS dashboard — names, timing, easing, and source components.
+
+### Keyframes
+
+| Name | Description | Source |
+|------|-------------|--------|
+| `statusPulse` | Opacity 0.7→1→0.7, infinite | CommandDeskCard |
+| `reactorPulse` | scale(1)→scale(1.06), opacity 0.82→1, alternate | CommandDeskCard |
+| `deskPulse` | Gold box-shadow expand/collapse, 1 cycle | CommandDeskCard |
+| `collabDash` | SVG stroke-dashoffset scroll, 1.2s linear infinite | CollaborationLine |
+| `collabStroke` | Stroke appear, 250ms linear | CommandCenterFloorPlan |
+| `workingPulse` | Glow dot fade, 2s ease-in-out infinite | Sidebar |
+
+```css
+@keyframes statusPulse {
+  0%, 100% { opacity: 0.7; }
+  50%       { opacity: 1; }
+}
+
+@keyframes reactorPulse {
+  0%   { transform: scale(1);    opacity: 0.82; }
+  100% { transform: scale(1.06); opacity: 1; }
+}
+
+@keyframes deskPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251,191,36,0),   0 10px 24px rgba(0,0,0,0.38); }
+  50%       { box-shadow: 0 0 0 7px rgba(251,191,36,0.22), 0 10px 24px rgba(0,0,0,0.42); }
+}
+
+@keyframes collabDash {
+  to { stroke-dashoffset: -16; }
+}
+
+@keyframes collabStroke {
+  from { opacity: 0; stroke-dashoffset: 40; }
+  to   { opacity: 1; stroke-dashoffset: 0;  }
+}
+```
+
+### Framer Motion Variants (reusable)
+
+```ts
+export const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.3, ease: [0, 0, 0.2, 1] },
+}
+
+export const slideUp = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.35, ease: [0, 0, 0.2, 1] },
+}
+
+export const staggerContainer = {
+  animate: { transition: { staggerChildren: 0.05 } },
+}
+
+export const scaleIn = {
+  initial: { opacity: 0, scale: 0.95 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.25, ease: [0, 0, 0.2, 1] },
+}
+```
+
+### Easing Reference (CSS)
+
+```css
+--ease-standard:   cubic-bezier(0.4, 0, 0.2, 1);
+--ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+--ease-accelerate: cubic-bezier(0.4, 0, 1, 1);
+--ease-growth:     cubic-bezier(0.16, 1, 0.3, 1);
+```
+
+### Duration Tokens (CSS custom properties)
+
+```css
+--duration-instant:  100ms;
+--duration-micro:    150ms;
+--duration-fast:     250ms;
+--duration-standard: 300ms;
+--duration-entrance: 800ms;
+--duration-pulse:    1500ms;
+--duration-reactor:  2400ms;
+```
+
+### Rules Summary
+
+- Max scale on hover: `scale(1.03)` — never higher
+- Reactor ring animation: `2.4s` alternate — intentionally slow, conveys steady power
+- Collaboration lines: `1.2s` dash scroll — matches "data in motion" metaphor
+- All entrance animations use `ease-decelerate` — things arrive with intention
+- All exit animations use `ease-accelerate` — things leave cleanly
+
+*Updated 2026-03-09 by Devan (Task #004)*
