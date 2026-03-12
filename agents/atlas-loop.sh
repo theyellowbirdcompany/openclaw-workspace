@@ -22,7 +22,7 @@
 set -euo pipefail
 
 # ── Config ──────────────────────────────────────────────────────────────────
-SUPABASE_URL="https://jcfsmpgugqqsasfrswyw.supabase.co"
+SUPABASE_URL="https://vzpexiztpmojgyswtkze.supabase.co"
 ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjZnNtcGd1Z3Fxc2FzZnJzd3l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI3NTg2MjQsImV4cCI6MjA4ODMzNDYyNH0.Rwt-6u7gYrS85kJsob10tW7FOXXCjFY8sLJZRD3vQXI"
 AGENT_NAME="Atlas"
 MODEL_USED="google/gemini-2.5-flash"

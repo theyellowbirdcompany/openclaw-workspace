@@ -4,6 +4,18 @@
     "qmd": {
       "version": "1.0.0",
       "installedAt": 1772838747212
+    },
+    "ui-ux-pro-max-plus": {
+      "version": "1.0.0",
+      "installedAt": 1773278679434
+    },
+    "tailwind-v4-shadcn": {
+      "version": "1.0.0",
+      "installedAt": 1773278685142
+    },
+    "ui-ux-design": {
+      "version": "1.0.0",
+      "installedAt": 1773278689151
     }
   }
 }

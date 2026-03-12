@@ -14,7 +14,7 @@ if [[ "$AGENT_ID" != "builder" ]] && [[ ! "$TASK" =~ design|interface|frontend|l
 fi
 
 WORKSPACE="/home/clawd/.openclaw/workspace"
-MEMORY_FILE="/home/clawd/.openclaw/workspaces/Devan/MEMORY.md"
+MEMORY_FILE="/home/clawd/.openclaw/workspace/Devan/MEMORY.md"
 INJECT_FILE="/tmp/openclaw-design-history-inject.md"
 
 # Extract last 3 design post-mortems from Devan's MEMORY.md

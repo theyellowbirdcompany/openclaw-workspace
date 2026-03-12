@@ -1,11 +1,17 @@
 {
-  "timestamp": "2026-03-10T08:11:02.107Z",
-  "openTaskCount": 1,
+  "timestamp": "2026-03-10T17:09:06.322Z",
+  "openTaskCount": 2,
   "tasks": [
     {
-      "id": "007",
-      "assignedTo": "@Bernard @Christopher @Devan @Vale @Scribe @Atlas",
-      "priority": "Mission Critical",
+      "id": "010",
+      "assignedTo": "@Bernard",
+      "priority": "Medium",
+      "postedBy": "Claw (from Brett)"
+    },
+    {
+      "id": "011",
+      "assignedTo": "@Bernard (Lead), @Scribe (Identity/Voice), @Atlas (Infrastructure)",
+      "priority": "Medium",
       "postedBy": "Claw (from Brett)"
     }
   ],
