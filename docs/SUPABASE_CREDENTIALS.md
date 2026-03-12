@@ -1,7 +1,0 @@
-# Supabase Credentials for the OpenClaw Dashboard Project
-# This file is machine-readable. Do not change the format.
-
-PROJECT_URL="https://vzpexiztpmojgyswtkze.supabase.co"
-ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6cGV4aXp0cG1vamd5c3d0a3plIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMxODQ1MjQsImV4cCI6MjA4ODc2MDUyNH0.upBYzZheIkZSULw08H45LqsoxPQNEPuJs7qDk1mN_HQ"
-SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6cGV4aXp0cG1vamd5c3d0a3plIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzE4NDU3NCwiZXhwIjoyMDg4NzYwNTc0fQ.VHf7-rvNJQWgmUtMptgt3AKJUuK-7VaayjP6URSQ3lU"
-DATABASE_PASSWORD="YellowBird123!!!"
