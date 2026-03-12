@@ -1,0 +1,34 @@
+=== BUILD OUTPUT ===
+
+> command-center-v2@0.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 32 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-BDw3KnDn.css    0.49 kB │ gzip:  0.32 kB
+dist/assets/index-D595mb6g.js   193.91 kB │ gzip: 60.94 kB
+✓ built in 1.85s
+
+=== SUPABASE VERIFICATION ===
+[dotenv@17.3.1] injecting env (2) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+Testing Supabase connection...
+URL: https://vzpexiztpmojgyswtkze.supabase.co
+
+✅ Successfully connected to Supabase!
+
+📊 Found 7 agents in agent_status table:
+
+1. Atlas - idle - Operations Manager ready
+2. Bernard - idle - Chief of Staff ready
+3. Christopher - idle - Research Intelligence ready
+4. Claw - idle - Orchestrator ready
+5. Devan - idle - Technical Builder ready
+6. Scribe - idle - Communications Specialist ready
+7. Vale - idle - Growth Strategist ready
+
+✅ All 7 agents present!

@@ -1,0 +1,135 @@
+[
+  {
+    "route": "/",
+    "url": "https://test-mu-beryl-17.vercel.app/",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://test-mu-beryl-17.vercel.app/",
+    "navError": null,
+    "screenshotPath": "/home/clawd/.openclaw/workspace/output/playwright/Christopher/root.png",
+    "consoleMessages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 400 ()"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailures": [
+      {
+        "url": "https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/todos?select=id&completed=eq.true&created_at=gte.2026-03-12T07%3A00%3A00.000Z",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "url": "https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/agent_logs?select=created_at&created_at=gte.2026-03-11T23%3A10%3A42.420Z",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "url": "https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/todos?select=id&completed=eq.true&created_at=gte.2026-03-12T07%3A00%3A00.000Z",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      },
+      {
+        "url": "https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/todos?select=id&status=in.%28todo%2Cpending%2Cin_progress%29&completed=eq.false",
+        "failure": {
+          "errorText": "net::ERR_ABORTED"
+        }
+      }
+    ],
+    "assessment": {
+      "title": "openclaw-dashboard",
+      "visibleTextLen": 1791,
+      "hasAppContent": true,
+      "possible404": false,
+      "blankish": false,
+      "bodySnippet": "🐦\nOpenClaw\nAgent OS v3\n🖥️\nCommand Center\n📡\nTelemetry\n📋\nMission Queue\n🤖\nAgents\n🐦\nAgent Profiles\n🗂️\nLogs\n💰\nCost Intelligence\n⭐\nNorth Star\n⚙️\nSettings\n\nPhase 12 · Bird Command\n\nThe Yellow Bird Company\n\nCommand Center\n\nReal-time floor telemetry and coordination lattice\n\nNORTH STAR LOCKED\n\n⭐ No active North Star set.\n\nRESEARCH WING\nSTRATEGY CENTER\nCOMMAND POST\nOPS STATION\nGROWTH WING\nCOMMS HUB\n"
+    }
+  },
+  {
+    "route": "/agents",
+    "url": "https://test-mu-beryl-17.vercel.app/agents",
+    "status": 404,
+    "ok": false,
+    "finalUrl": "https://test-mu-beryl-17.vercel.app/agents",
+    "navError": null,
+    "screenshotPath": "/home/clawd/.openclaw/workspace/output/playwright/Christopher/agents.png",
+    "consoleMessages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailures": [],
+    "assessment": {
+      "title": "404: NOT_FOUND",
+      "visibleTextLen": 129,
+      "hasAppContent": true,
+      "possible404": true,
+      "blankish": false,
+      "bodySnippet": "404: NOT_FOUND\nCode: NOT_FOUND\nID: pdx1::pwnnd-1773357044825-ffeb4b097b7d\n\nRead our documentation to learn more about this error."
+    }
+  },
+  {
+    "route": "/command-center",
+    "url": "https://test-mu-beryl-17.vercel.app/command-center",
+    "status": 404,
+    "ok": false,
+    "finalUrl": "https://test-mu-beryl-17.vercel.app/command-center",
+    "navError": null,
+    "screenshotPath": "/home/clawd/.openclaw/workspace/output/playwright/Christopher/command-center.png",
+    "consoleMessages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailures": [],
+    "assessment": {
+      "title": "404: NOT_FOUND",
+      "visibleTextLen": 129,
+      "hasAppContent": true,
+      "possible404": true,
+      "blankish": false,
+      "bodySnippet": "404: NOT_FOUND\nCode: NOT_FOUND\nID: pdx1::226gr-1773357047093-5860789a0a33\n\nRead our documentation to learn more about this error."
+    }
+  },
+  {
+    "route": "/queue",
+    "url": "https://test-mu-beryl-17.vercel.app/queue",
+    "status": 404,
+    "ok": false,
+    "finalUrl": "https://test-mu-beryl-17.vercel.app/queue",
+    "navError": null,
+    "screenshotPath": "/home/clawd/.openclaw/workspace/output/playwright/Christopher/queue.png",
+    "consoleMessages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailures": [],
+    "assessment": {
+      "title": "404: NOT_FOUND",
+      "visibleTextLen": 129,
+      "hasAppContent": true,
+      "possible404": true,
+      "blankish": false,
+      "bodySnippet": "404: NOT_FOUND\nCode: NOT_FOUND\nID: pdx1::2qt4h-1773357049377-68b80acebdad\n\nRead our documentation to learn more about this error."
+    }
+  }
+]

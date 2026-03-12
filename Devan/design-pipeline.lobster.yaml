@@ -1,0 +1,139 @@
+name: design-pipeline
+description: Complete 4-stage design workflow with parallel exploration and automated QA
+
+args:
+  project_name:
+    type: string
+    description: "Project name (e.g., 'Landing Page', 'Dashboard')"
+  brief:
+    type: string
+    description: "Design brief/requirements"
+  complexity:
+    type: string
+    enum: ["simple", "moderate", "complex"]
+    default: "moderate"
+    description: "Project complexity (simple=solo, moderate/complex=parallel)"
+
+env:
+  PROJECT_NAME: "${LOBSTER_ARG_PROJECT_NAME}"
+  BRIEF: "${LOBSTER_ARG_BRIEF}"
+  COMPLEXITY: "${LOBSTER_ARG_COMPLEXITY}"
+  WORKSPACE: "/home/clawd/.openclaw/workspace"
+  DEVAN_WORKSPACE: "/home/clawd/.openclaw/workspaces/Devan"
+
+steps:
+  # Stage 1: Design Philosophy (always runs, Claude Code - free)
+  - id: philosophy
+    name: "Stage 1: Design Philosophy"
+    description: "Write design manifesto, name aesthetic movement"
+    command: >
+      node ${WORKSPACE}/claude-code-wrapper.js prompt
+      "Write a design manifesto for: ${LOBSTER_ARG_PROJECT_NAME}. Brief: ${LOBSTER_ARG_BRIEF}"
+    approval: false
+
+  # Stage 2a: Layout Exploration (complexity-gated, Claude Code - free)
+  - id: layout_exploration
+    name: "Stage 2a: Layout Exploration"
+    description: "Explore 3 spatial composition variants (complex only)"
+    command: |
+      if [ "${COMPLEXITY}" = "complex" ]; then
+        node ${WORKSPACE}/claude-code-wrapper.js subagent layout \
+          '{"task":"Explore 3 spatial composition variants for ${PROJECT_NAME}","context":{"brief":"${BRIEF}"}}'
+      else
+        jq -n '{"stage":"layout","complexity":"${COMPLEXITY}","status":"skipped"}'
+      fi
+    approval: false
+
+  # Stage 2b: Typography Research (complexity-gated, Claude Code - free)
+  - id: typography_research
+    name: "Stage 2b: Typography Research"
+    description: "Select font pairings (complex only)"
+    command: |
+      if [ "${COMPLEXITY}" = "complex" ]; then
+        node ${WORKSPACE}/claude-code-wrapper.js subagent typography \
+          '{"task":"Research and select 3 font pairings for ${PROJECT_NAME}","context":{"constraint":"Space Mono + IBM Plex"}}'
+      else
+        jq -n '{"stage":"typography","complexity":"${COMPLEXITY}","status":"skipped"}'
+      fi
+    approval: false
+
+  # Stage 2c: Motion Design (always runs, Claude Code - free)
+  - id: motion_design
+    name: "Stage 2c: Motion Design"
+    description: "Design p5.js animations and generative background"
+    command: |
+      node ${WORKSPACE}/claude-code-wrapper.js subagent motion \
+        '{"task":"Design p5.js animation system for ${PROJECT_NAME}","context":{"palette":"Navy+Gold","timing":"BRAND.md"}}'
+    approval: false
+
+  # Stage 3: Synthesis (Claude Code - free)
+  - id: synthesize
+    name: "Stage 3: Synthesize"
+    description: "Select best elements from explorations"
+    command: |
+      node ${WORKSPACE}/claude-code-wrapper.js workflow synthesis \
+        '{"project":"${PROJECT_NAME}","inputs":{"layout":"$layout_exploration.stdout","typography":"$typography_research.stdout","motion":"$motion_design.stdout"}}'
+    approval: false
+
+  # Stage 4: Production Build (API model - tokens burn here)
+  - id: production_build
+    name: "Stage 4: Production Build"
+    description: "Bundle into React + TypeScript + Tailwind"
+    command: |
+      node ${WORKSPACE}/claude-code-wrapper.js workflow production \
+        '{"project":"${PROJECT_NAME}","design":"$synthesize.stdout"}'
+    approval: false
+
+  # QA: Visual Regression (Pixelmatch - free)
+  - id: visual_qa
+    name: "QA: Visual Regression"
+    description: "Run Pixelmatch until drift < 0.5%"
+    command: |
+      jq -n '{
+        "stage":"qa",
+        "tool":"visual-diff-loop",
+        "threshold":"0.5%",
+        "status":"convergence_ready"
+      }'
+    approval: false
+
+  # Review: Final Approval Gate
+  - id: final_review
+    name: "Review: Final Approval"
+    description: "Human approval before deployment"
+    command: |
+      jq -n '{
+        "project":"${PROJECT_NAME}",
+        "complexity":"${COMPLEXITY}",
+        "stages_complete":["philosophy","layout","typography","motion","synthesis","production","qa"],
+        "ready_for_deployment":true
+      }'
+    approval: required
+    preview: |
+      Project: ${PROJECT_NAME}
+      Complexity: ${COMPLEXITY}
+      All stages complete. Deploy?
+
+  # Deploy
+  - id: deploy
+    name: "Deploy"
+    description: "Deploy to production"
+    command: |
+      jq -n '{
+        "project":"${PROJECT_NAME}",
+        "status":"deployed",
+        "timestamp":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'",
+        "url":"http://localhost:5173/${PROJECT_NAME}"
+      }'
+    approval: false
+    condition: "$final_review.approved"
+
+  # Post-Mortem: Document Learnings (Claude Code - free)
+  - id: postmortem
+    name: "Post-Mortem: Document Learnings"
+    description: "Write learnings to MEMORY.md"
+    command: |
+      node ${WORKSPACE}/claude-code-wrapper.js workflow postmortem \
+        '{"project":"${PROJECT_NAME}","design":"$synthesize.stdout","qa":"$visual_qa.stdout"}'
+    approval: false
+    condition: "$deploy.ok or true"

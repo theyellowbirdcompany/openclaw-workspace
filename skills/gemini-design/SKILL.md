@@ -3,7 +3,9 @@
 Vale's design ideation tool. Use Gemini (Google) for visual concepts, brand directions, moodboards, copy+design brainstorming, and image-generation-adjacent workflows.
 
 ## API Key
-`AIzaSyCC9UNmrbVutdSbblloGl7EIH0eJ0Ax-QQ`
+Stored in `.env.local` (not visible in this file for security)
+
+Reference as: `${GOOGLE_API_KEY}`
 
 ## Verified Working Model
 `models/gemini-2.5-flash`
@@ -11,7 +13,7 @@ Vale's design ideation tool. Use Gemini (Google) for visual concepts, brand dire
 ## Basic Text / Design Ideation
 ```bash
 curl -s -X POST \
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCC9UNmrbVutdSbblloGl7EIH0eJ0Ax-QQ" \
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
     "contents": [{
@@ -43,3 +45,4 @@ Then use those outputs with dashboard/UI work or later visual tools.
 - The older Gemini model names are inconsistent; `gemini-2.5-flash` is currently working
 - If image-generation-specific endpoints are needed later, test `models/gemini-2.5-flash-image`
 - This is a strong replacement for Canva for early-stage concept work
+- API key is stored in `.env.local` and referenced via `${GOOGLE_API_KEY}`

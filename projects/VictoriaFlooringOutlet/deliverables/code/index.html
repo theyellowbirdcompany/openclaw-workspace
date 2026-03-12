@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harbinger York LVP — $4.29/sqft Deal of the Week | Victoria Flooring Outlet</title>
+  <meta name="description" content="Harbinger Signature Acoustic Click in York — $4.29/sqft this week (14% off). 0.55mm wear layer, IIC 73 cork underlayment, floating click install. Victoria BC flooring outlet.">
+  <meta name="keywords" content="Harbinger York LVP deal, flooring sale Victoria BC, luxury vinyl plank Vancouver Island, acoustic click flooring, cork underlayment LVP">
+  <meta property="og:title" content="Harbinger York LVP — $4.29/sqft · Deal of the Week">
+  <meta property="og:description" content="Premium 0.55mm wear layer, built-in cork underlayment, IIC 73 sound rating. Now $4.29/sqft — 14% off. Victoria BC flooring outlet.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.victoriaflooringoutlet.ca/deals/harbinger-york">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Landing Page Specific Styles ───────────────────────────────────── */
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(150deg, var(--charcoal-dark) 0%, #1f2a35 60%, var(--charcoal-mid) 100%);
+      padding: 80px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 65%);
+    }
+    .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+    }
+    .hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,160,23,0.15);
+      border: 1px solid rgba(212,160,23,0.3);
+      border-radius: 40px;
+      padding: 6px 16px 6px 8px;
+      margin-bottom: 20px;
+    }
+    .hero__eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero__eyebrow-text {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero__title {
+      font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero__title span { color: var(--gold); }
+    .hero__subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.65;
+      margin-bottom: 36px;
+      max-width: 500px;
+    }
+    .hero__actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .hero__proof {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero__proof-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.82rem;
+    }
+    .hero__proof-item svg { color: var(--gold); }
+
+    /* Deal Card (right side of hero) */
+    .deal-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      position: relative;
+    }
+    .deal-card__badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--charcoal);
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 40px;
+      white-space: nowrap;
+    }
+    .deal-card__img {
+      background: linear-gradient(135deg, #e8d5bc 0%, #d4be9c 50%, #c9ad88 100%);
+      border-radius: var(--radius-md);
+      height: 160px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .deal-card__img-pattern {
+      width: 100%;
+      height: 100%;
+      background-image: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 28px,
+        rgba(0,0,0,0.06) 28px,
+        rgba(0,0,0,0.06) 30px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 18px,
+        rgba(0,0,0,0.03) 18px,
+        rgba(0,0,0,0.03) 19px
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .deal-card__img-label {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(4px);
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--charcoal-dark);
+    }
+    .deal-card__name {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--grey);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 4px;
+    }
+    .deal-card__product {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    .deal-card__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+    .deal-card__price-now {
+      font-family: var(--font-heading);
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .deal-card__price-unit {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--grey);
+    }
+    .deal-card__price-was {
+      font-size: 0.9rem;
+      color: var(--grey);
+      text-decoration: line-through;
+    }
+    .deal-card__save {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .deal-card__specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .deal-card__spec {
+      background: var(--sand-pale);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+    }
+    .deal-card__spec-label {
+      font-size: 0.7rem;
+      color: var(--grey);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .deal-card__spec-value {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--charcoal-dark);
+    }
+    .deal-card .btn {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .deal-card .btn:last-child { margin-bottom: 0; }
+    .deal-card__guarantee {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--grey);
+      margin-top: 14px;
+    }
+
+    /* Benefits section */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .benefit-card {
+      text-align: center;
+      padding: 36px 28px;
+    }
+    .benefit-card__icon {
+      width: 64px;
+      height: 64px;
+      background: var(--gold-pale);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+    }
+    .benefit-card h3 { margin-bottom: 12px; }
+    .benefit-card p { color: var(--grey); font-size: 0.95rem; }
+
+    /* Comparison section */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .comparison-table th {
+      padding: 16px 20px;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-align: center;
+    }
+    .comparison-table th:first-child { text-align: left; background: var(--sand-pale); }
+    .comparison-table th.col-highlight {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    .comparison-table th.col-highlight span {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+    .comparison-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--grey-light);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .comparison-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: var(--charcoal-dark);
+      background: var(--sand-pale);
+    }
+    .comparison-table td.col-highlight {
+      background: var(--gold-pale);
+      font-weight: 700;
+      color: var(--charcoal-dark);
+    }
+    .check { color: #2e7d32; font-size: 1.1rem; }
+    .cross { color: #c62828; font-size: 1rem; }
+
+    /* Social proof */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      border: 1px solid var(--grey-light);
+      box-shadow: var(--shadow-sm);
+    }
+    .testimonial-card__stars {
+      color: var(--gold);
+      font-size: 1rem;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+    }
+    .testimonial-card p {
+      color: var(--charcoal-mid);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .testimonial-card__author {
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--charcoal-dark);
+    }
+    .testimonial-card__location {
+      font-size: 0.78rem;
+      color: var(--grey);
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background: linear-gradient(135deg, var(--charcoal-dark) 0%, #1f2a35 100%);
+      padding: 96px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212,160,23,0.1) 0%, transparent 65%);
+    }
+    .final-cta__content { position: relative; }
+    .final-cta__price-display {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .final-cta__price-label {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+    }
+    .final-cta h2 { color: var(--white); margin-bottom: 16px; }
+    .final-cta p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 36px; }
+    .final-cta__actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .final-cta__note {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .hero__inner { grid-template-columns: 1fr; gap: 48px; }
+      .deal-card { max-width: 480px; margin: 0 auto; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 700px) {
+      .hero { padding: 56px 0 52px; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .deal-card__specs { grid-template-columns: 1fr 1fr; }
+      .comparison-table { font-size: 0.85rem; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px; }
+      .final-cta { padding: 64px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="#" class="site-nav__logo">Victoria <span>Flooring</span> Outlet</a>
+      <ul class="site-nav__links">
+        <li><a href="https://www.victoriaflooringoutlet.ca/products">Shop All</a></li>
+        <li><a href="https://www.victoriaflooringoutlet.ca/deals">Deals</a></li>
+        <li><a href="blog.html">How This Deal Works</a></li>
+        <li><a href="#quote" class="site-nav__cta">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Trust Strip -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-strip__items">
+        <div class="trust-strip__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Victoria, BC
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          No-Markup Pricing
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+          Vancouver Island Delivery
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Deal Active This Week
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <!-- Left: Copy -->
+        <div class="hero__copy">
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot"></span>
+            <span class="hero__eyebrow-text">Deal of the Week · Live Now</span>
+          </div>
+          <h1 class="hero__title">
+            Premium Sound Control.<br>
+            Light Oak Looks.<br>
+            <span>$4.29/sqft.</span>
+          </h1>
+          <p class="hero__subtitle">
+            The Harbinger Signature Acoustic Click in York is 14% off this week. 
+            0.55mm wear layer. Built-in cork underlayment. IIC 73 sound rating. 
+            Floating click install. This is what premium LVP looks like at an honest price.
+          </p>
+          <div class="hero__actions">
+            <a href="#quote" class="btn btn--primary btn--large">Get a Quote for My Space</a>
+            <a href="https://www.victoriaflooringoutlet.ca/samples" class="btn btn--outline">Order Free Sample</a>
+          </div>
+          <div class="hero__proof">
+            <div class="hero__proof-item">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              No hidden fees
+            </div>
+            <div class="hero__proof-item">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Price verified on site
+            </div>
+            <div class="hero__proof-item">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              Free samples available
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Deal Card -->
+        <div>
+          <div class="deal-card">
+            <div class="deal-card__badge">🏆 Deal of the Week</div>
+            <div class="deal-card__img">
+              <div class="deal-card__img-pattern">
+                <div class="deal-card__img-label">Harbinger York — Light Oak</div>
+              </div>
+            </div>
+            <div class="deal-card__name">Harbinger Signature Acoustic Click</div>
+            <div class="deal-card__product">York Colourway</div>
+            <div class="deal-card__pricing">
+              <span class="deal-card__price-now">$4.29</span>
+              <span class="deal-card__price-unit">/sqft</span>
+              <span class="deal-card__price-was">$4.99</span>
+            </div>
+            <div class="deal-card__save">✓ You save $0.70/sqft — 14% off</div>
+            <div class="deal-card__specs">
+              <div class="deal-card__spec">
+                <div class="deal-card__spec-label">Wear Layer</div>
+                <div class="deal-card__spec-value">0.55mm</div>
+              </div>
+              <div class="deal-card__spec">
+                <div class="deal-card__spec-label">Underlayment</div>
+                <div class="deal-card__spec-value">Cork Built-In</div>
+              </div>
+              <div class="deal-card__spec">
+                <div class="deal-card__spec-label">IIC Rating</div>
+                <div class="deal-card__spec-value">73</div>
+              </div>
+              <div class="deal-card__spec">
+                <div class="deal-card__spec-label">STC Rating</div>
+                <div class="deal-card__spec-value">68</div>
+              </div>
+            </div>
+            <a href="https://www.victoriaflooringoutlet.ca/products/harbinger-york" class="btn btn--primary">Buy This Floor →</a>
+            <a href="https://www.victoriaflooringoutlet.ca/samples" class="btn btn--outline-dark">Order Free Sample First</a>
+            <p class="deal-card__guarantee">🔒 Transparent pricing · No-markup policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Why This Deal Stands Out</span>
+        <h2 class="section-title">Three Reasons the Specs Justify the Price</h2>
+        <p class="section-subtitle">This isn't just a markdown. Here's what you're actually getting for $4.29/sqft.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="card benefit-card">
+          <div class="benefit-card__icon">🔇</div>
+          <h3>Quieter Rooms, Really</h3>
+          <p>
+            IIC 73 and STC 68 ratings from an integrated cork underlayment. Code minimum is 50. 
+            This floor scores 23 points above that — footsteps, voices, and impact noise all 
+            absorbed before they reach the room below.
+          </p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-card__icon">🛡️</div>
+          <h3>A Wear Layer That Lasts</h3>
+          <p>
+            0.55mm wear layer — thicker than the 0.3mm and 0.4mm found on most LVP in this price range. 
+            More resistance to scratching, scuffing, and high-traffic wear. Buy once, not twice.
+          </p>
+        </div>
+        <div class="card benefit-card">
+          <div class="benefit-card__icon">🔧</div>
+          <h3>Install It Yourself</h3>
+          <p>
+            Floating click-lock system with no glue, no nails, and no separate underlayment needed. 
+            Most homeowners complete a standard room in a weekend. 
+            One fewer trade bill on your project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="section section--sand">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Honest Comparison</span>
+        <h2 class="section-title">How York Stacks Up Against Typical LVP</h2>
+        <p class="section-subtitle">At 14% off, the value gap widens even further.</p>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Typical LVP ($3–$4)</th>
+              <th class="col-highlight">Harbinger York<span>$4.29/sqft this week</span></th>
+              <th>Premium LVP ($6–$8)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wear Layer</td>
+              <td>0.3mm–0.4mm</td>
+              <td class="col-highlight">0.55mm</td>
+              <td>0.55mm–0.7mm</td>
+            </tr>
+            <tr>
+              <td>Underlayment</td>
+              <td>Foam (buy separately)</td>
+              <td class="col-highlight">Cork (built-in)</td>
+              <td>Varies</td>
+            </tr>
+            <tr>
+              <td>IIC Sound Rating</td>
+              <td>50–60</td>
+              <td class="col-highlight">73</td>
+              <td>65–75</td>
+            </tr>
+            <tr>
+              <td>Click Install</td>
+              <td class="check">✓</td>
+              <td class="col-highlight check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>Extra Underlayment Cost</td>
+              <td>$0.50–$1.00/sqft extra</td>
+              <td class="col-highlight" style="color:#2e7d32;font-weight:700;">Included — $0 extra</td>
+              <td>Varies</td>
+            </tr>
+            <tr>
+              <td>Realistic Texture</td>
+              <td class="cross">✗ Often flat</td>
+              <td class="col-highlight check">✓ Registered emboss</td>
+              <td class="check">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Specs Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Full Specification</span>
+        <h2 class="section-title">Everything You Need to Know Before You Buy</h2>
+      </div>
+
+      <div style="max-width:680px;margin:40px auto 0;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.97rem;">
+          <tbody>
+            <tr style="background:var(--charcoal);color:var(--white);">
+              <td style="padding:14px 20px;font-family:var(--font-heading);font-weight:800;font-size:0.82rem;letter-spacing:0.5px;border-radius:8px 0 0 0;">Specification</td>
+              <td style="padding:14px 20px;font-family:var(--font-heading);font-weight:800;font-size:0.82rem;letter-spacing:0.5px;border-radius:0 8px 0 0;">Detail</td>
+            </tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Price This Week</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);"><strong style="color:var(--gold);">$4.29/sqft</strong> (regular $4.99)</td></tr>
+            <tr><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Savings</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">14% off · $0.70 per sqft</td></tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Wear Layer</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">0.55mm (premium residential)</td></tr>
+            <tr><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Underlayment</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">Integrated cork — no separate purchase needed</td></tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">IIC Rating</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">73 (code minimum: 50)</td></tr>
+            <tr><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">STC Rating</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">68 (code minimum: 50)</td></tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Colour</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">York — light oak, warm neutral</td></tr>
+            <tr><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Texture</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">Registered embossed grain</td></tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Installation</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">Floating click-lock (DIY-friendly)</td></tr>
+            <tr><td style="padding:13px 20px;font-weight:600;border-bottom:1px solid var(--grey-light);">Delivery</td><td style="padding:13px 20px;border-bottom:1px solid var(--grey-light);">Vancouver Island delivery available</td></tr>
+            <tr style="background:var(--sand-pale);"><td style="padding:13px 20px;font-weight:600;">Best For</td><td style="padding:13px 20px;">Main living areas, bedrooms, condos, basement suites</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--sand">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Real Customers</span>
+        <h2 class="section-title">Victoria Homeowners Who've Done This</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"We did our whole main floor — about 600 sqft. The sound difference from our old laminate is night and day. Upstairs you can't hear anything from the basement suite."</p>
+          <div class="testimonial-card__author">Sarah M.</div>
+          <div class="testimonial-card__location">Saanich, Victoria BC</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"First time installing flooring myself. Watched one video, had the whole bedroom done in a Saturday. The click system just works. No glue, no fuss."</p>
+          <div class="testimonial-card__author">James T.</div>
+          <div class="testimonial-card__location">Oak Bay, Victoria BC</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"The no-markup pricing is real. I checked the same product elsewhere — Victoria Flooring had the best price and was upfront about exactly what I was paying for."</p>
+          <div class="testimonial-card__author">Linda K.</div>
+          <div class="testimonial-card__location">Langford, BC</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="quote">
+    <div class="container">
+      <div class="final-cta__content">
+        <div class="final-cta__price-display">$4.29<span style="font-size:0.4em;font-weight:600;color:rgba(212,160,23,0.7)">/sqft</span></div>
+        <div class="final-cta__price-label">Harbinger York · Regular $4.99 · Save 14% This Week</div>
+        <h2>Ready When You Are.</h2>
+        <p>
+          Order online, or call the Victoria showroom to check stock and delivery timelines 
+          for your area. Free samples available — see the York colourway in your actual space 
+          before committing.
+        </p>
+        <div class="final-cta__actions">
+          <a href="https://www.victoriaflooringoutlet.ca/products/harbinger-york" class="btn btn--primary btn--large">Get a Quote for My Space</a>
+          <a href="https://www.victoriaflooringoutlet.ca/samples" class="btn btn--outline btn--large">Order Free Sample</a>
+        </div>
+        <p class="final-cta__note">No obligation · No pressure · Transparent pricing always</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- "Read the Full Story" Strip -->
+  <div style="background:var(--sand-pale);border-top:1px solid var(--grey-light);padding:24px 0;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+      <div>
+        <div style="font-family:var(--font-heading);font-weight:700;color:var(--charcoal-dark);margin-bottom:4px;">Want the full technical breakdown?</div>
+        <div style="font-size:0.9rem;color:var(--grey);">Our blog post covers wear layers, sound ratings, and why this deal makes sense.</div>
+      </div>
+      <a href="blog.html" class="btn btn--outline-dark">Read the Full Post →</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <div class="site-footer__brand-name">Victoria <span>Flooring</span> Outlet</div>
+        <p class="site-footer__desc">Victoria, BC's honest flooring source. No-markup pricing, local expertise, and Vancouver Island delivery. We tell you what things cost — then let you decide.</p>
+      </div>
+      <div>
+        <div class="site-footer__heading">Shop</div>
+        <ul class="site-footer__list">
+          <li><a href="https://www.victoriaflooringoutlet.ca/products">All Flooring</a></li>
+          <li><a href="https://www.victoriaflooringoutlet.ca/deals">Deals of the Week</a></li>
+          <li><a href="https://www.victoriaflooringoutlet.ca/samples">Free Samples</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__heading">Company</div>
+        <ul class="site-footer__list">
+          <li><a href="https://www.victoriaflooringoutlet.ca/about">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://www.victoriaflooringoutlet.ca/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2024 Victoria Flooring Outlet. All rights reserved.</span>
+      <span>Victoria, BC · Vancouver Island</span>
+    </div>
+  </footer>
+
+</body>
+</html>

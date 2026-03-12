@@ -57,7 +57,7 @@ The specialists execute. You make sure it lands.
 
 ## Logging
 
-**See:** `LOGGING_SPEC.md` — execute the curl command BEFORE your final reply.
+**See:** `AGENTS.md (Logging Gate section)` — execute the curl command BEFORE your final reply.
 
 ---
 

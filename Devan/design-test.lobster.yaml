@@ -1,0 +1,18 @@
+name: design-test
+description: Minimal test of Lobster + Claude Code integration
+
+args:
+  project_name:
+    type: string
+    default: "Test Project"
+
+steps:
+  - id: test_echo
+    name: "Test Basic Echo"
+    command: >
+      jq -n --arg name "$LOBSTER_ARG_PROJECT_NAME" '{"project":$name,"status":"working"}'
+    
+  - id: test_claude_code
+    name: "Test Claude Code Integration"
+    command: >
+      /home/clawd/.local/bin/claude -p "Return only JSON: {\"test\": \"passed\", \"project\": \"$LOBSTER_ARG_PROJECT_NAME\"}"

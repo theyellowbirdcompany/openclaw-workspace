@@ -1,89 +1,77 @@
-# MAP.md — Workspace Floor Plan
-
-## 1) Workspace Layout
-
-- **Root** = shared operating surface: core docs (~12 files), system specs, bulletin board.
-- **`BULLETIN_BOARD.md`** = live job queue.
-- **`tasks/`** = shared task folders for cross-system work.
-- **Agent folders** (`Bernard/`, `Claw/`, etc.) = agent-local workspace and outputs.
-- **`projects/`** = project code/docs grouped by product.
-- **`docs/`** = reference material (board reference, deployment guides, etc.).
-- **`memory/`** = dated continuity notes.
-- **`bin/`** = scripts and tools.
-- **`templates/`** = reusable templates for tasks, projects, sessions.
-- **`archive/`** = old material; not the default read path.
-- Treat root as the index layer; go deeper only when the task points there.
-
-## 2) Critical Document Chain
-
-Read in this order when orienting:
-1. **`MAP.md`** — where things live (this file)
-2. **`{YourName}/CONTEXT.md`** — your role, boundaries, tools
-3. **`BULLETIN_BOARD.md`** — current work queue
-4. **`DELEGATION_SPEC.md`** — routing, ownership, escalation (when needed)
-5. **`LOGGING_SPEC.md`** — logging contract (when needed)
-
-## 3) Agent Workspace Pattern
-
-The system has **7 agents**: Claw (orchestrator) + 6 specialists.
-
-| Agent | Folder | Role |
-|-------|--------|------|
-| Claw | `Claw/` | Orchestrator, user interface, system admin |
-| Bernard | `Bernard/` | Strategist, planning, quality review |
-| Christopher | `Christopher/` | Research, external intelligence |
-| Devan | `Devan/` | Builder, code, implementation |
-| Vale | `Vale/` | Growth, brand, distribution |
-| Scribe | `Scribe/` | Communications, writing, content |
-| Atlas | `Atlas/` | Ops, infrastructure, file organization |
-
-Each agent has a `CONTEXT.md` (role, tools, boundaries) and an optional `tasks/` subfolder.
-
-## 4) Task Folder Pattern
-
-Standard task shape:
-- **`BRIEF.md`** — what the task is
-- **`PHASES.md`** — sequence / status
-- **`phases/`** — per-phase working files
-
-Task folders live under:
-- **`tasks/<task-id>-<slug>/`** for shared work
-- **`<Agent>/tasks/<task-id>-<slug>/`** for agent-local work
-
-## 5) Naming Conventions
-
-- **Root docs:** UPPERCASE (`SOUL.md`, `DELEGATION_SPEC.md`)
-- **Task folders:** `NNN-short-slug` (`012-deprecate-north-star`)
-- **Subfolders:** lowercase, descriptive (`tasks/`, `docs/`, `memory/`)
-
-## 6) Superseded Docs
-
-- `LOGGING.md` → `LOGGING_SPEC.md`
-- `ROUTER.md` → `DELEGATION_SPEC.md`
-- `PIPELINE.md` → `docs/EXECUTION_PIPELINE.md` + `DELEGATION_SPEC.md`
-
-## 7) Write Boundaries (Hard Rule)
-
-Every agent writes to exactly three places:
-
-1. **`{AgentName}/`** — agent-local workspace
-2. **`tasks/{assigned-task}/`** — when working a shared task
-3. **`projects/{project}/{domain}/`** — when assigned project work
-
-**No root files. No other agent folders.** Root doc updates go through the owning agent or escalation.
-
-## 8) Project Container Pattern
-
-New projects follow `templates/PROJECT.md`:
+# MAP.md — Workspace Directory Structure
 
 ```
-projects/{project-name}/
-  research/      ← Christopher
-  src/           ← Devan
-  content/       ← Scribe
-  brand/         ← Vale
-  ops/           ← Atlas
-  deliverables/  ← final shipped artifacts
+/home/clawd/.openclaw/workspace/
+│
+├── 📋 Root Docs (System & Coordination)
+│   ├── AGENTS.md                    (startup sequence, logging gate, task rules)
+│   ├── DELEGATION_SPEC.md           (routing authority)
+│   ├── BULLETIN_BOARD.md            (live job queue)
+│   ├── BRAND.md                     (brand guidelines)
+│   ├── USER.md                      (Brett's profile & preferences)
+│   ├── SOUL.md                      (workspace identity)
+│   ├── TOOLS.md                     (local environment setup)
+│   ├── IDENTITY.md                  (workspace identity config)
+│   ├── STANDARDS.md                 (system standards)
+│   └── HEARTBEAT.md                 (periodic task queue)
+│
+├── 📁 Agent Folders (Private Workspaces)
+│   ├── Atlas/                       (ops & infrastructure)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   └── [private work]
+│   ├── Bernard/                     (strategy & review)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   ├── BERNARD_REVIEW_PROTOCOL.md
+│   │   └── [private work]
+│   ├── Christopher/                 (research)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   └── [private work]
+│   ├── Claw/                        (orchestration)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   ├── DEBUG_LOG.md
+│   │   └── [private work]
+│   ├── Devan/                       (builder)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   └── [private work]
+│   ├── Scribe/                      (communications)
+│   │   ├── SOUL.md
+│   │   ├── CONTEXT.md
+│   │   └── [private work]
+│   └── Vale/                        (growth & brand)
+│       ├── SOUL.md
+│       ├── CONTEXT.md
+│       └── [private work]
+│
+├── 📂 projects/                     (Multi-agent & multi-session work)
+│   └── {project-name}/
+│       ├── PROJECT.md               (canonical source of truth)
+│       └── deliverables/            (shipped artifacts)
+│
+├── 📚 docs/                         (Reference & Guides)
+│   └── [deployment guides, references]
+│
+├── 💾 memory/                       (Continuity & Logs)
+│   └── YYYY-MM-DD.md                (daily notes)
+│
+├── 🔧 bin/                          (Scripts & Tools)
+│   └── [utility scripts]
+│
+├── 📋 templates/                    (Reusable Templates)
+│   └── [template files]
+│
+└── 📦 archive/                      (Old Material)
+    └── [deprecated/historical work]
 ```
 
-Each agent writes only to their domain subfolder within a project.
+---
+
+**Quick Reference:**
+- **Agent workspace:** `{AgentName}/` — private, never cross-read
+- **Shared project work:** `projects/{project-name}/PROJECT.md` — canonical
+- **Root files:** System & coordination docs only. No agent output.
+- **Daily notes:** `memory/YYYY-MM-DD.md`

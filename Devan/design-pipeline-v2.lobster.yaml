@@ -1,0 +1,71 @@
+name: design-pipeline-v2
+description: Production-ready design workflow (Lobster + Claude Code + zero-cost orchestration)
+
+args:
+  project_name:
+    type: string
+    description: "Project name"
+  brief:
+    type: string
+    description: "Design brief"
+  complexity:
+    type: string
+    default: "simple"
+    enum: ["simple", "moderate", "complex"]
+
+steps:
+  # Stage 1: Philosophy (Claude Code - zero cost)
+  - id: philosophy
+    name: "🎨 Design Philosophy"
+    command: >
+      /home/clawd/.local/bin/claude -p 
+      "Write a design manifesto for: $LOBSTER_ARG_PROJECT_NAME. Brief: $LOBSTER_ARG_BRIEF. 
+      Return JSON: {movement: string, rules: string[], palette: string[], forbidden: string[]}"
+
+  # Stage 2: Parallel Work (only if complex)
+  - id: layout
+    name: "📐 Layout Exploration"
+    command: >
+      if [ "$LOBSTER_ARG_COMPLEXITY" = "complex" ]; then
+        /home/clawd/.local/bin/claude -p "Explore 3 layout variants for $LOBSTER_ARG_PROJECT_NAME. Return JSON array."
+      else
+        echo '{"status":"skipped","reason":"simple complexity"}'
+      fi
+  
+  - id: typography
+    name: "🔤 Typography"
+    command: >
+      /home/clawd/.local/bin/claude -p "Recommend font pairing for $LOBSTER_ARG_PROJECT_NAME. Default: Space Mono + IBM Plex. Return JSON."
+  
+  - id: motion
+    name: "✨ Motion Design"
+    command: >
+      /home/clawd/.local/bin/claude -p "Design p5.js animation for $LOBSTER_ARG_PROJECT_NAME. Return JSON with code + timing."
+
+  # Stage 3: Synthesis
+  - id: synthesize
+    name: "🔗 Synthesis"
+    command: >
+      /home/clawd/.local/bin/claude -p "Synthesize design: Project=$LOBSTER_ARG_PROJECT_NAME. Return JSON final spec."
+
+  # Final Review (approval gate)
+  - id: review
+    name: "✅ Final Review"
+    command: >
+      jq -n --arg name "$LOBSTER_ARG_PROJECT_NAME" '{"project":$name,"status":"ready","timestamp":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}'
+    approval: required
+    preview: "Approve $LOBSTER_ARG_PROJECT_NAME for deployment?"
+
+  # Deploy
+  - id: deploy
+    name: "🚀 Deploy"
+    command: >
+      jq -n --arg name "$LOBSTER_ARG_PROJECT_NAME" '{"deployed":true,"project":$name}'
+    condition: "$review.approved"
+
+  # Post-mortem (Claude Code - zero cost)
+  - id: postmortem
+    name: "📝 Post-Mortem"
+    command: >
+      /home/clawd/.local/bin/claude -p "Document learnings for $LOBSTER_ARG_PROJECT_NAME. Append to MEMORY.md format."
+    condition: "$deploy.ok or true"
