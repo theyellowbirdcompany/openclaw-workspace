@@ -4,13 +4,28 @@ Every agent reads this file on startup. Keep it short.
 
 ## Session Startup
 
-Load these files in order, then start working:
-
+All agents load in this order:
 1. **MAP.md** — workspace floor plan and write boundaries
 2. **Your CONTEXT.md** — `{YourName}/CONTEXT.md` (role, tools, boundaries)
-3. **BULLETIN_BOARD.md** — live job queue (scan for OPEN tasks assigned to you)
 
-That's it. Do not load other files unless your CONTEXT.md startup list or the task brief says to.
+Bernard additionally loads:
+3. **BULLETIN_BOARD.md** — live job queue (for routing decisions only)
+
+Claw additionally loads:
+3. **DELEGATION_SPEC.md** — routing authority (for orchestration)
+
+All other agents: Done. Wait for task brief.
+
+## Task Brief Contract
+
+When an agent receives a task via sessions_spawn, the brief includes:
+- Task title
+- Full objective and constraints
+- All context needed to execute
+- Deliverables expected
+
+Agents do NOT need to consult BULLETIN_BOARD to understand their assignment.
+The brief is self-contained and authoritative.
 
 ## Safety Rules
 
