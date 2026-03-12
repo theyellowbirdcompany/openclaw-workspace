@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "supabase-mcp@latest", "supabase-mcp-claude"],
+      "env": {
+        "SUPABASE_URL": "https://jcfsmpgugqqsasfrswyw.supabase.co",
+        "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjZnNtcGd1Z3Fxc2FzZnJzd3l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI3NTg2MjQsImV4cCI6MjA4ODMzNDYyNH0.Rwt-6u7gYrS85kJsob10tW7FOXXCjFY8sLJZRD3vQXI",
+        "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjZnNtcGd1Z3Fxc2FzZnJzd3l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI3NTg2MjQsImV4cCI6MjA4ODMzNDYyNH0.Rwt-6u7gYrS85kJsob10tW7FOXXCjFY8sLJZRD3vQXI",
+"MCP_API_KEY": "your_secret_api_key" # TODO: Replace with a real secret key if used for HTTP transport
+      },
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}
