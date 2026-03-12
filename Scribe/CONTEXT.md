@@ -37,6 +37,42 @@ Communications and writing specialist. Creates content, messaging, documentation
 - `sag` — ElevenLabs TTS for voice content (if available)
 - `memory_search` / `memory_get` — context
 
+## Logging Gate (MANDATORY)
+
+**Every task requires two Supabase log entries. No exceptions. Task cannot be marked DONE without both logs.**
+
+This applies to every task type: PROJECT.md updates, skill creation, documentation work, research, implementation, reviews, file organization, and everything else. No exceptions.
+
+### On Task START (immediately upon receiving task)
+```bash
+curl -X POST https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/agent_logs \
+  -H "apikey: [SUPABASE_ANON_KEY]" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_name": "YourName",
+    "task_description": "Your task title here",
+    "status": "in_progress"
+  }'
+```
+
+### On Task END (before marking done)
+```bash
+curl -X POST https://vzpexiztpmojgyswtkze.supabase.co/rest/v1/agent_logs \
+  -H "apikey: [SUPABASE_ANON_KEY]" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_name": "YourName",
+    "task_description": "Your task title here",
+    "status": "completed",
+    "task_output": "Brief summary of what you actually did (~500 chars)"
+  }'
+```
+
+**REQUIRED:**
+- Both logs must be in Supabase before task is complete
+- `task_output` must be a brief summary of what you actually did, not just that you did it
+- This is a gate, not optional
+
 ## Output Location
 - Drafts: `Scribe/` or task folder
 - Project content: `projects/{project}/content/`
